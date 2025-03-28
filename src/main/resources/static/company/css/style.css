@@ -1,0 +1,38 @@
+/* Container for form */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Form rows with flexbox */
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Each input field's container */
+.form-group {
+    width: 48%; /* Mỗi trường chiếm 48% chiều rộng của hàng */
+}
+
+/* Các trường input */
+input[type="text"], input[type="tel"], input[type="email"], input[type="url"], input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+/* Nút submit */
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}

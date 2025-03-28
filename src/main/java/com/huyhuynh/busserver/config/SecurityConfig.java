@@ -2,6 +2,7 @@ package com.huyhuynh.busserver.config;
 
 import com.huyhuynh.busserver.security.jwt.JwtRequestFilter;
 import com.huyhuynh.busserver.services.AccountInfoService;
+import com.huyhuynh.busserver.utils.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -71,7 +72,8 @@ public class SecurityConfig {
 
     private String[] getListPagePermit(){
         return new String[]{
-                "/register/**",  // ✅ Cho phép mở trang đăng ký
+                "/register/**",
+                "/company/**",
                 "/register/css/**",
                 "/register/js/**"
         };
@@ -80,6 +82,7 @@ public class SecurityConfig {
     private String[] getListApiPermit(){
         return new String[]{
                 "/login",
+                Constants.apiPrePath+"/company/create"
         };
     }
 }
