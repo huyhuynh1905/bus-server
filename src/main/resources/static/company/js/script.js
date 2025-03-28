@@ -44,4 +44,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 alert("Lỗi: " + error.message);
             });
     });
+
+    // Khi người dùng nhấn nút "Tạo công ty"
+    const createCompanyButton = document.getElementById("createAccountButton");
+    createCompanyButton.addEventListener("click", function () {
+        window.location.href = "/register/register.html"; // Điều hướng đến trang tạo công ty
+    });
 });

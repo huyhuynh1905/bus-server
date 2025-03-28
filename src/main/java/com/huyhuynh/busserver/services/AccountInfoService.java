@@ -2,6 +2,9 @@ package com.huyhuynh.busserver.services;
 
 import com.huyhuynh.busserver.entity.AccountInfoEntity;
 import com.huyhuynh.busserver.repository.AccountInfoRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -17,17 +20,13 @@ import java.util.Optional;
 @Service
 public class AccountInfoService implements UserDetailsService {
 
+    @Autowired
     private AccountInfoRepository accountInfoRepository;
+
+    @Lazy
+    @Autowired
     private PasswordEncoder passwordEncoder;
 
-    public AccountInfoService(){
-
-    }
-
-    public AccountInfoService(AccountInfoRepository accountInfoRepository, PasswordEncoder passwordEncoder) {
-        this.accountInfoRepository = accountInfoRepository;
-        this.passwordEncoder = passwordEncoder;
-    }
 
     @Override
     @Transactional
@@ -39,6 +38,10 @@ public class AccountInfoService implements UserDetailsService {
     }
 
     public AccountInfoEntity registerUser(AccountInfoEntity accountInfoEntity) {
+        // Kiểm tra xem email đã tồn tại chưa
+        if (accountInfoRepository.existsByEmail(accountInfoEntity.getEmail()) || accountInfoRepository.existsByUsername(accountInfoEntity.getUsername())) {
+            throw new DataIntegrityViolationException("duplicate: Thông tin đã tồn tại trong hệ thống.");
+        }
         accountInfoEntity.setPassword(passwordEncoder.encode(accountInfoEntity.getPassword()));
         return accountInfoRepository.save(accountInfoEntity);
     }

@@ -1,51 +1,40 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
+/* Container cho toàn bộ form */
 .container {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 80%;
+    margin: 0 auto;
 }
 
-h2 {
-    text-align: center;
-}
-
-form {
+/* Cài đặt cho các hàng trong form */
+.form-row {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-label {
-    margin: 5px 0;
-    font-weight: bold;
+/* Mỗi nhóm input sẽ chiếm 45% chiều rộng của form */
+.form-group {
+    width: 48%;
 }
 
-input {
-    padding: 8px;
-    margin-bottom: 10px;
+/* Cài đặt các trường input */
+input[type="text"], input[type="password"], input[type="email"], input[type="tel"], input[type="number"], input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
-button {
-    background-color: #28a745;
+button[type="submit"], button#createCompanyButton {
+    padding: 10px 20px;
+    background-color: #4CAF50;
     color: white;
     border: none;
-    padding: 10px;
+    border-radius: 4px;
     cursor: pointer;
-    border-radius: 5px;
+    margin-top: 20px;
 }
 
-button:hover {
-    background-color: #218838;
+button[type="submit"]:hover, button#createCompanyButton:hover {
+    background-color: #45a049;
 }

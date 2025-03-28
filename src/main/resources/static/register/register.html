@@ -1,48 +1,110 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đăng ký tài khoản</title>
-    <link rel="stylesheet" href="/register/css/style.css"> <!-- ✅ Load CSS đúng -->
+    <link rel="stylesheet" href="/register/css/style.css">
 </head>
 <body>
 <div class="container">
     <h2>Đăng ký tài khoản</h2>
+
     <form id="registerForm">
-        <label>Username:</label>
-        <input type="text" id="username" required>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Mật khẩu:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+        </div>
 
-        <label>Password:</label>
-        <input type="password" id="password" required>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="role">Chức vụ:</label>
+                <input type="text" id="role" name="role">
+            </div>
+            <div class="form-group">
+                <label for="fullName">Họ tên:</label>
+                <input type="text" id="fullName" name="fullName">
+            </div>
+        </div>
 
-        <label>Họ:</label>
-        <input type="text" id="firstName" required>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="phone">Số điện thoại:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+        </div>
 
-        <label>Tên:</label>
-        <input type="text" id="lastName" required>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="avatar">Avatar:</label>
+                <input type="text" id="avatar" name="avatar">
+            </div>
+            <div class="form-group">
+                <label for="firstName">Họ:</label>
+                <input type="text" id="firstName" name="firstName">
+            </div>
+        </div>
 
-        <label>Email:</label>
-        <input type="email" id="email" required>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="lastName">Tên:</label>
+                <input type="text" id="lastName" name="lastName">
+            </div>
+            <div class="form-group">
+                <label for="jobTitle">Chức danh:</label>
+                <input type="text" id="jobTitle" name="jobTitle">
+            </div>
+        </div>
 
-        <label>Số điện thoại:</label>
-        <input type="tel" id="phone" required>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="firstLogin">Lần đăng nhập đầu tiên:</label>
+                <input type="checkbox" id="firstLogin" name="firstLogin">
+            </div>
+            <div class="form-group">
+                <label for="routeId">ID tuyến đường:</label>
+                <input type="number" id="routeId" name="routeId">
+            </div>
+        </div>
 
-        <label>Chức vụ:</label>
-        <input type="text" id="jobTitle">
+        <div class="form-row">
+            <div class="form-group">
+                <label for="idCard">Số CMND:</label>
+                <input type="text" id="idCard" name="idCard">
+            </div>
+            <div class="form-group">
+                <label for="actived">Kích hoạt:</label>
+                <input type="number" id="actived" name="actived">
+            </div>
+        </div>
 
-        <label>Công ty (ID):</label>
-        <input type="number" id="companyId" required>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="locked">Khóa:</label>
+                <input type="number" id="locked" name="locked">
+            </div>
+            <div class="form-group">
+                <label for="companyId">ID công ty:</label>
+                <input type="number" id="companyId" name="companyId">
+            </div>
+        </div>
 
         <button type="submit">Đăng ký</button>
     </form>
 
+    <button id="createCompanyButton">Tạo công ty</button>
 
-    <ul>
-        <li><a href="/company/register_company.html">Tạo công ty</a></li>
-    </ul>
+    <script src="/register/js/script.js"></script>
 </div>
-
-<script src="/register/js/script.js"></script> <!-- ✅ Load JS đúng -->
 </body>
 </html>

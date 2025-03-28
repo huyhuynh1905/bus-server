@@ -1,34 +1,47 @@
 document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("registerForm").addEventListener("submit", function (event) {
-        event.preventDefault(); // Ngăn form gửi đi mặc định
+    const form = document.getElementById("registerForm");
 
-        const data = {
-            username: document.getElementById("username").value,
-            password: document.getElementById("password").value,
-            firstName: document.getElementById("firstName").value,
-            lastName: document.getElementById("lastName").value,
-            email: document.getElementById("email").value,
-            phone: document.getElementById("phone").value,
-            jobTitle: document.getElementById("jobTitle").value,
-            companyId: document.getElementById("companyId").value
-        };
+    form.addEventListener("submit", function (event) {
+        event.preventDefault(); // Ngăn chặn reload trang
 
-        fetch("/api/auth/register", { // ✅ API xử lý đăng ký
+        // Lấy dữ liệu từ form
+        const formData = new FormData(form);
+        const jsonData = {};
+
+        // Chuyển formData thành JSON
+        formData.forEach((value, key) => {
+            jsonData[key] = value.trim(); // Loại bỏ khoảng trắng thừa
+        });
+
+        // Gửi dữ liệu qua API đăng ký tài khoản
+        fetch("/api/v1/account/register", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify(data)
+            body: JSON.stringify(jsonData)
         })
-            .then(response => response.json())
-            .then(result => {
-                if (result.success) {
-                    alert("Đăng ký thành công!");
-                    window.location.href = "/login"; // Chuyển đến trang đăng nhập
-                } else {
-                    alert("Lỗi: " + result.message);
+            .then(response => {
+                if (!response.ok) {
+                    return response.json().then(err => {
+                        throw new Error(err.messages?.join(", ") || "Đăng ký không thành công");
+                    });
                 }
+                return response.json();
             })
-            .catch(error => console.error("Lỗi:", error));
+            .then(data => {
+                alert("Đăng ký tài khoản thành công!");
+                form.reset(); // Reset form sau khi đăng ký thành công
+            })
+            .catch(error => {
+                console.error("Lỗi:", error);
+                alert("Lỗi: " + error.message);
+            });
+    });
+
+    // Khi người dùng nhấn nút "Tạo công ty"
+    const createCompanyButton = document.getElementById("createCompanyButton");
+    createCompanyButton.addEventListener("click", function () {
+        window.location.href = "/company/register_company.html"; // Điều hướng tới trang register_company.html
     });
 });

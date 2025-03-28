@@ -82,7 +82,8 @@ public class SecurityConfig {
     private String[] getListApiPermit(){
         return new String[]{
                 "/login",
-                Constants.apiPrePath+"/company/create"
+                Constants.apiPrePath+"/company/create",
+                Constants.apiPrePath+"/account/register"
         };
     }
 }

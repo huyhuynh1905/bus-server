@@ -9,4 +9,6 @@ import org.springframework.stereotype.Repository;
 public interface AccountInfoRepository extends JpaRepository<AccountInfoEntity, Long> {
     AccountInfoEntity findByIdIs(Long id);
     AccountInfoEntity findByUsername(String username);
+    boolean existsByUsername(String username);
+    boolean existsByEmail(String email);
 }
