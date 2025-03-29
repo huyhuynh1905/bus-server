@@ -23,4 +23,10 @@ public class CompanyInfoService {
 
         return companyInfoRepository.save(company);
     }
+
+    public CompanyInfoEntity getById(Long id) {
+        return companyInfoRepository.findByIdIs(id);
+    }
+
+
 }

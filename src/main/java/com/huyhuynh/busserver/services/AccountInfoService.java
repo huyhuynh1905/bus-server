@@ -31,10 +31,18 @@ public class AccountInfoService implements UserDetailsService {
     @Override
     @Transactional
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        AccountInfoEntity user = accountInfoRepository.findByUsername(username);
-//                .orElseThrow(() -> new UsernameNotFoundException("User not found: " + username));
+        AccountInfoEntity user = accountInfoRepository.findByUsername(username)
+                .orElseThrow(() -> new UsernameNotFoundException("User not found: " + username));
 
         return new User(user.getUsername(), user.getPassword(), Collections.emptyList());
+    }
+
+    @Transactional(readOnly = true) // mở session để lấy company info
+    public AccountInfoEntity getByUsername(String username) throws UsernameNotFoundException {
+        AccountInfoEntity user = accountInfoRepository.findByUsername(username)
+                .orElseThrow(() -> new UsernameNotFoundException("User not found: " + username));
+        user.setPassword("");
+        return user;
     }
 
     public AccountInfoEntity registerUser(AccountInfoEntity accountInfoEntity) {

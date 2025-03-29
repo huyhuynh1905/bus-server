@@ -1,4 +1,4 @@
-package com.huyhuynh.busserver.controller;
+package com.huyhuynh.busserver.controller.api;
 
 import com.huyhuynh.busserver.entity.CompanyInfoEntity;
 import com.huyhuynh.busserver.model.ApiResponse;

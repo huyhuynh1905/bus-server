@@ -60,7 +60,7 @@ public class AccountInfoEntity {
     private Integer locked;
 
     // Quan hệ với CompanyInfoEntity (Mỗi tài khoản thuộc một công ty)
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "company_id")
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "company_id",referencedColumnName = "id")
     private CompanyInfoEntity companyInfo;
 }

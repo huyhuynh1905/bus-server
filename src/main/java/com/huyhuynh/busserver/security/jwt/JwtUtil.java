@@ -1,4 +1,5 @@
 package com.huyhuynh.busserver.security.jwt;
+import com.huyhuynh.busserver.model.AuthModel;
 import io.jsonwebtoken.JwtException;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -16,15 +17,17 @@ public class JwtUtil {
         return Keys.hmacShaKeyFor(SECRET_KEY.getBytes());
     }
 
-    public String generateToken(String username) {
+    public AuthModel generateToken(String username) {
         // 1 ngày
         long EXPIRATION_TIME = 86400000;
-        return Jwts.builder()
+        Date expired = new Date(System.currentTimeMillis() + EXPIRATION_TIME);
+        String token =  Jwts.builder()
                 .setSubject(username)
                 .setIssuedAt(new Date())
-                .setExpiration(new Date(System.currentTimeMillis() + EXPIRATION_TIME))
+                .setExpiration(expired)
                 .signWith(getSigningKey(), SignatureAlgorithm.HS256)
                 .compact();
+        return new AuthModel(token,expired.getTime(),"Bearer ");
     }
 
     public String extractUsername(String token) {

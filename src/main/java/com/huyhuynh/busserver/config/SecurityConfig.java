@@ -74,6 +74,7 @@ public class SecurityConfig {
         return new String[]{
                 "/register/**",
                 "/company/**",
+                "/login/**",
                 "/register/css/**",
                 "/register/js/**"
         };
@@ -83,7 +84,8 @@ public class SecurityConfig {
         return new String[]{
                 "/login",
                 Constants.apiPrePath+"/company/create",
-                Constants.apiPrePath+"/account/register"
+                Constants.apiPrePath+"/account/register",
+                Constants.apiPrePath+"/authentication/authenticate",
         };
     }
 }
