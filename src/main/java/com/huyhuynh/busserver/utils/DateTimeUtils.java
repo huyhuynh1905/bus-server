@@ -7,7 +7,7 @@ import java.time.format.DateTimeParseException;
 public class DateTimeUtils {
 
     public static final String DATE_FORMATTER = "yyyy-MM-dd";
-    public static final String DATE_TIME_DB_FORMATTER = "yyyy-MM-ddTHH:mm:ss";
+    public static final String DATE_TIME_DB_FORMATTER = "yyyy-MM-dd'T'HH:mm:ss";
 
     /**
      * Cập nhật ngày trong chuỗi DateTime nhưng giữ nguyên phần thời gian.

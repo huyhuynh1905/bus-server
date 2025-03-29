@@ -8,7 +8,7 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ShiftScheduleRequest {
-    private String sellerId;
-    private String schedulerTime;
-    public String sessionToken;
+    private String sellerIdCard;
+    private String scheduleTime;
+    private String sessionToken;
 }

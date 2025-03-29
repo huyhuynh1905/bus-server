@@ -44,8 +44,8 @@ public class ShiftScheduleController {
     @PostMapping("/getbydate")
     public ResponseEntity<ApiResponse<List<ShiftSchedulerEntity>>> getByDate(@RequestBody ShiftScheduleRequest request) {
         try {
-            String timeDate = DateTimeUtils.formatDateString(request.getSchedulerTime(), DateTimeUtils.DATE_TIME_DB_FORMATTER, DateTimeUtils.DATE_FORMATTER);
-            List<ShiftSchedulerEntity> list = shiftScheduleService.findAllByTimeAndSallerId(request.getSellerId(), timeDate);
+            String timeDate = DateTimeUtils.formatDateString(request.getScheduleTime(), DateTimeUtils.DATE_TIME_DB_FORMATTER, DateTimeUtils.DATE_FORMATTER);
+            List<ShiftSchedulerEntity> list = shiftScheduleService.findAllByTimeAndSallerId(request.getSellerIdCard(), timeDate);
             ApiResponse<List<ShiftSchedulerEntity>> successResponse = ApiResponse.success(list);
             return ResponseEntity.ok(successResponse);
         } catch (Exception e) {
