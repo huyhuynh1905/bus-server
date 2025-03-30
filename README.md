@@ -1,49 +1,52 @@
-# Spring Boot Bus Server Project Structure
+# Spring Boot Bus Server Project
 
-This project follows a professional and scalable folder structure for a Spring Boot application using Gradle.
+This project support server api and database for project POS app [bus-pos-app-provider](https://github.com/huyhuynh1905/bus-pos-app-provider).
+
+## Resources:
+- [database - PostgreSQL]().
+- [Postman - jsonCollection]().
+
 
 ## 📂 Project Structure
 
 ```
-/your-project
+/bus-server
 │── src
 │   ├── main
-│   │   ├── java/com/example/yourproject
-│   │   │   ├── config          # Application configuration (Security, CORS, DB, etc.)
-│   │   │   ├── controller      # Handles HTTP requests
-│   │   │   ├── dto             # Data Transfer Objects
-│   │   │   ├── exception       # Custom exception handling
-│   │   │   ├── model           # Defines entities
-│   │   │   ├── repository      # JPA repositories (or DAO layer)
-│   │   │   ├── service         # Business logic
-│   │   │   ├── util            # Utility classes
-│   │   │   ├── YourProjectApplication.java # Main entry point
+│   │   ├── java/com/huyhuynh/busserver
+│   │   │   ├── config                          # Application configuration (Security, CORS, JWTAuthen, etc.)
+│   │   │   ├── controller                      # Handles HTTP requests
+│   │   │   ├── dto                             # Data Transfer Objects
+│   │   │   ├── exception                       # Custom exception handling
+│   │   │   ├── model                           # Defines model for request and response
+│   │   │   ├── entity                          # Defines entities
+│   │   │   ├── repository                      # JPA repositories (or DAO layer)
+│   │   │   ├── service                         # Business logic
+│   │   │   ├── security                        # Security custom and cryption
+│   │   │   ├── utils                           # Utility classes
+│   │   │   ├── BusServerApplication.java       # Main entry point
 │   │   ├── resources
-│   │   │   ├── static          # Static files (CSS, JS, images)
-│   │   │   ├── templates       # Template files (Thymeleaf, FreeMarker)
-│   │   │   ├── application.yml # Application configuration
-│   ├── test/java/com/example/yourproject
-│       ├── controller          # Controller unit tests
-│       ├── service             # Service layer tests
-│       ├── repository          # Repository layer tests
-│── build.gradle                # Gradle build configuration
-│── settings.gradle              # Gradle project settings
-│── gradlew, gradlew.bat         # Gradle wrapper scripts
-│── README.md                    # Project documentation
+│   │   │   ├── static                          # Static files (CSS, JS, images)
+│   │   │   ├── templates                       # Template files (Thymeleaf, FreeMarker)
+│   │   │   ├── application.properties          # Application configuration
+│── build.gradle                                # Gradle build configuration
+│── settings.gradle                             # Gradle project settings
+│── gradlew, gradlew.bat                        # Gradle wrapper scripts
+│── README.md                                   # Project documentation
 ```
 
 ## 🛠️ Technologies Used
 - **Spring Boot** (REST API, Security, JPA, etc.)
 - **Gradle** (Dependency management & build automation)
-- **H2/PostgreSQL/MySQL** (Database integration)
+- **PostgreSQL** (Database integration)
 - **Thymeleaf** (For template-based views, optional)
 - **JUnit & Mockito** (For testing)
 
 ## 🚀 Getting Started
 ### 1. Clone the repository:
 ```sh
-git clone https://github.com/your-username/your-project.git
-cd your-project
+git clone https://github.com/huyhuynh1905/bus-server.git
+cd bus-server
 ```
 
 ### 2. Build & Run the application:
@@ -51,17 +54,13 @@ cd your-project
 ./gradlew bootRun
 ```
 
-### 3. API Endpoints:
-- `GET /api/example` - Sample endpoint
-- `POST /api/example` - Sample POST request
-
-### 4. Running Tests:
+### 3. Running Tests:
 ```sh
 ./gradlew test
 ```
 
 ## 📌 Notes
-- Modify `application.yml` for database and environment configurations.
+- Modify `application.properties` for database and environment configurations.
 - Follow the folder structure for better maintainability.
 
 ---
