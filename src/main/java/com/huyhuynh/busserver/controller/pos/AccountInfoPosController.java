@@ -3,7 +3,6 @@ package com.huyhuynh.busserver.controller.pos;
 import com.huyhuynh.busserver.entity.AccountInfoEntity;
 import com.huyhuynh.busserver.model.ApiResponse;
 import com.huyhuynh.busserver.services.AccountInfoService;
-import com.huyhuynh.busserver.services.CompanyInfoService;
 import com.huyhuynh.busserver.utils.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -21,9 +20,6 @@ import java.util.List;
 public class AccountInfoPosController {
     @Autowired
     private AccountInfoService accountInfoService;
-
-    @Autowired
-    private CompanyInfoService companyInfoService;
 
     @GetMapping("/get-account-info")
     public ResponseEntity<ApiResponse<AccountInfoEntity>> getAccountInfo() {

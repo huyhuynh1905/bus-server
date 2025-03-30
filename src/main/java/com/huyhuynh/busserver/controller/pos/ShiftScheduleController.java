@@ -23,12 +23,12 @@ public class ShiftScheduleController {
     @PostMapping("/inserts-today")
     public ResponseEntity<ApiResponse<List<ShiftSchedulerEntity>>> insertsForToday(@RequestBody List<ShiftSchedulerEntity> list) {
         try {
-            for (int i = 0; i < list.size(); i++) {
+            for (ShiftSchedulerEntity shiftSchedulerEntity : list) {
                 String timeDate = DateTimeUtils.getCurrentDateyyMMdd();
-                list.get(i).setScheduleId(list.get(i).getScheduleId()+timeDate);
-                String timeSchedulerToday = DateTimeUtils.updateToCurrentDate(list.get(i).getScheduleTime());
-                list.get(i).setScheduleTime(timeSchedulerToday);
-                list.get(i).setId(null); //để id tự tăng
+                shiftSchedulerEntity.setScheduleId(shiftSchedulerEntity.getScheduleId() + timeDate);
+                String timeSchedulerToday = DateTimeUtils.updateToCurrentDate(shiftSchedulerEntity.getScheduleTime());
+                shiftSchedulerEntity.setScheduleTime(timeSchedulerToday);
+                shiftSchedulerEntity.setId(null); //để id tự tăng
             }
             boolean success = shiftScheduleService.saveListScheduler(list);
             if (success) {

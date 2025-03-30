@@ -1,6 +1,5 @@
 package com.huyhuynh.busserver.controller.pos;
 
-import com.huyhuynh.busserver.entity.RouteEntity;
 import com.huyhuynh.busserver.entity.TicketProductEntity;
 import com.huyhuynh.busserver.model.ApiResponse;
 import com.huyhuynh.busserver.model.TicketProductResponseModel;
