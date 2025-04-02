@@ -15,6 +15,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Map;
+
 @RestController
 @RequestMapping(Constants.apiPrePath +"/account")
 public class AccountInfoController {
@@ -38,6 +40,13 @@ public class AccountInfoController {
         // Response thành công
         ApiResponse<AccountInfoEntity> successResponse = ApiResponse.success(newUser);
         return ResponseEntity.ok(successResponse);
+
+    }
+
+    @PostMapping("/sign-out")
+    public ResponseEntity<ApiResponse<Map<String,String>>> signOut(@RequestBody Map request) {
+        System.out.println("signOut =======> "+request.toString());
+        return ResponseEntity.ok(ApiResponse.success(Map.of()));
 
     }
 }

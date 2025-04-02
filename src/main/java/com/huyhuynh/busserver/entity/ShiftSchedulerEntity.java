@@ -25,7 +25,7 @@ public class ShiftSchedulerEntity {
     private String driverLicense;
 
     @Column(name = "go_back")
-    private Integer goBack;
+    private String goBack;
 
     @Column(name = "route_id")
     private Long routeId;

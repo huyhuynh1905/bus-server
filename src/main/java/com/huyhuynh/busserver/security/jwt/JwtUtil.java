@@ -27,7 +27,7 @@ public class JwtUtil {
                 .setExpiration(expired)
                 .signWith(getSigningKey(), SignatureAlgorithm.HS256)
                 .compact();
-        return new AuthModel(token,expired.getTime(),"Bearer ");
+        return new AuthModel(token,expired.getTime()+"","Bearer ");
     }
 
     public String extractUsername(String token) {

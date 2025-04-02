@@ -29,15 +29,29 @@ public class JwtRequestFilter extends OncePerRequestFilter {
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response,
                                     FilterChain chain) throws ServletException, IOException {
         final String authorizationHeader = request.getHeader("Authorization");
-
-        String username = null;
-        String jwt = null;
-
-        if (authorizationHeader != null && authorizationHeader.startsWith("Bearer ")) {
-            jwt = authorizationHeader.substring(7);
+        final String authorizationHeaderToken = request.getHeader("TOKEN");
+        if(authorizationHeaderToken!=null) {
+            String username = null;
+            String jwt = null;
+            jwt = authorizationHeaderToken;
             username = jwtUtil.extractUsername(jwt);
-        }
+            _checkUserName(request, username, jwt);
+        } else {
 
+            String username = null;
+            String jwt = null;
+
+            if (authorizationHeader != null && authorizationHeader.startsWith("Bearer ")) {
+                jwt = authorizationHeader.substring(7);
+                username = jwtUtil.extractUsername(jwt);
+            }
+
+            _checkUserName(request, username, jwt);
+        }
+        chain.doFilter(request, response);
+    }
+
+    private void _checkUserName(HttpServletRequest request, String username, String jwt) {
         if (username != null && SecurityContextHolder.getContext().getAuthentication() == null) {
             UserDetails userDetails = accountInfoService.loadUserByUsername(username);
 
@@ -49,6 +63,5 @@ public class JwtRequestFilter extends OncePerRequestFilter {
                 SecurityContextHolder.getContext().setAuthentication(authenticationToken);
             }
         }
-        chain.doFilter(request, response);
     }
 }

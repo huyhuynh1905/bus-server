@@ -11,6 +11,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class AuthModel {
     private String accessToken;
-    private Long expired;
+    private String expired;
     private String tokenType;
 }
