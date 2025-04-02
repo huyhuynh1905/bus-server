@@ -16,7 +16,7 @@ public class BussinessSettingsController {
     @Autowired
     private PosParaService posParaService;
 
-    @PostMapping("/insert-list-pos-para")
+    @PostMapping("/insert-list-businesssetting")
     public ResponseEntity<ApiResponse<List<PosParaEntity>>> insertList(@RequestBody List<PosParaEntity> posParaEntities) {
         ApiResponse<List<PosParaEntity>> apiResponse = new ApiResponse<>();
         try {
@@ -31,7 +31,17 @@ public class BussinessSettingsController {
     @GetMapping("/pos-para")
     public ResponseEntity<ApiResponse<List<PosParaEntity>>> getPosParaList() {
         try {
-            List<PosParaEntity> posParaEntities = posParaService.getAll();
+            List<PosParaEntity> posParaEntities = posParaService.getAllBySettingType(PosParaEntity.typePosPara);
+            return ResponseEntity.ok(ApiResponse.success(posParaEntities));
+        }catch (Exception e){
+            return ResponseEntity.badRequest().body(ApiResponse.error(List.of(e.getMessage())));
+        }
+    }
+
+    @GetMapping("/object-type")
+    public ResponseEntity<ApiResponse<List<PosParaEntity>>> getObjectCardList() {
+        try {
+            List<PosParaEntity> posParaEntities = posParaService.getAllBySettingType(PosParaEntity.typeObjectCard);
             return ResponseEntity.ok(ApiResponse.success(posParaEntities));
         }catch (Exception e){
             return ResponseEntity.badRequest().body(ApiResponse.error(List.of(e.getMessage())));

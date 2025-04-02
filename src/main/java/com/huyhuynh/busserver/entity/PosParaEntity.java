@@ -9,6 +9,10 @@ import lombok.Setter;
 @Getter
 @Setter
 public class PosParaEntity {
+
+    public static final String typePosPara = "POS_PARA";
+    public static final String typeObjectCard = "OBJECT_CARD";
+
     @Id
     private Long id;
 

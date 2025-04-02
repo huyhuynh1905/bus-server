@@ -19,4 +19,8 @@ public class PosParaService {
     public List<PosParaEntity> getAll() {
         return posParaRepository.findAll();
     }
+
+    public List<PosParaEntity> getAllBySettingType(String settingType) {
+        return posParaRepository.findAllBySettingType(settingType);
+    }
 }
