@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -38,11 +39,16 @@ public class RouteInfoController {
         try {
             RouteInfoResponseModel routeInfoResponseModel = new RouteInfoResponseModel();
             List<BusStopEntity> busStopEntities = busStopServices.getBusStopByRouteId(request.getRouteId());
-            List<SummarySchedulerEntity> summarySchedulerEntities = summaryScheduleServices.getAllSummarySchedulesByRouteIdAndNode(request.getRouteId(), request.getNode());
+            //SummarySchedulerEntity summarySchedulerEntities = summaryScheduleServices.getLastSummaryScheduleByRouteIdAndNode(request.getRouteId(), request.getNode());
+            //ArrayList<SummarySchedulerEntity> summarys = new ArrayList<>();
+            //if(summarySchedulerEntities!=null) summarys.add(summarySchedulerEntities);
+            List<SummarySchedulerEntity> list = summaryScheduleServices.getAllSummarySchedulesByRouteIdAndNode(request.getRouteId(),request.getNode());
+
             RouteEntity routeEntity = routeServices.getRouteById(request.getRouteId().longValue());
             routeInfoResponseModel.setMRoute(routeEntity);
             routeInfoResponseModel.setMBusStops(busStopEntities);
-            routeInfoResponseModel.setSummarySchedules(summarySchedulerEntities);
+
+            routeInfoResponseModel.setSummarySchedules(list);
             return ResponseEntity.ok(ApiResponse.success(routeInfoResponseModel));
         } catch (Exception e){
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ApiResponse.error(List.of(e.getMessage())));
@@ -73,6 +79,26 @@ public class RouteInfoController {
     public ResponseEntity<ApiResponse<SummarySchedulerEntity>> createSummary(@RequestBody SummarySchedulerEntity request) {
         try {
             SummarySchedulerEntity summarySchedulerEntity = summaryScheduleServices.createSummarySchedule(request);
+            return ResponseEntity.ok(ApiResponse.success(summarySchedulerEntity));
+        } catch (Exception e){
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ApiResponse.error(List.of(e.getMessage())));
+        }
+    }
+
+    @PostMapping("/get-summary")
+    public ResponseEntity<ApiResponse<List<SummarySchedulerEntity>>> getListSummary(@RequestBody RouteRequestModel request) {
+        try {
+            List<SummarySchedulerEntity> list = summaryScheduleServices.getAllSummarySchedulesByRouteIdAndNode(request.getRouteId(),request.getNode());
+            return ResponseEntity.ok(ApiResponse.success(list));
+        } catch (Exception e){
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ApiResponse.error(List.of(e.getMessage())));
+        }
+    }
+
+    @PostMapping("/create-summary-list")
+    public ResponseEntity<ApiResponse<List<SummarySchedulerEntity>>> createSummaryList(@RequestBody List<SummarySchedulerEntity> requestList) {
+        try {
+            List<SummarySchedulerEntity> summarySchedulerEntity = summaryScheduleServices.createListSummarySchedule(requestList);
             return ResponseEntity.ok(ApiResponse.success(summarySchedulerEntity));
         } catch (Exception e){
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ApiResponse.error(List.of(e.getMessage())));

@@ -5,6 +5,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 @Entity
 @Table(name = "summary_schedules")
 @Getter
@@ -14,7 +17,6 @@ import lombok.Setter;
 public class SummarySchedulerEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(name = "ticket_id", nullable = false)
@@ -53,7 +55,7 @@ public class SummarySchedulerEntity {
     @Column(name = "seller_id_card", length = 50)
     private String sellerIdCard;
 
-    @Column(name = "is_sync", nullable = false)
+    @Column(name = "is_sync")
     private Integer isSync;
 
     @Column(name = "sync_date", length = 25)
@@ -62,5 +64,13 @@ public class SummarySchedulerEntity {
     @Column(name = "shift_scheduler_id", nullable = false)
     private Integer shiftSchedulerId;
 
+
+    // Hàm dùng để so sánh theo scheduleTime
+    public static int compareByScheduleTime(SummarySchedulerEntity o1, SummarySchedulerEntity o2) {
+        DateTimeFormatter formatter = DateTimeFormatter.ISO_LOCAL_DATE_TIME;
+        LocalDateTime t1 = LocalDateTime.parse(o1.syncDate, formatter);
+        LocalDateTime t2 = LocalDateTime.parse(o2.syncDate, formatter);
+        return t2.compareTo(t1);  //sắp xếp ngày sync mới nhất
+    }
 }
 

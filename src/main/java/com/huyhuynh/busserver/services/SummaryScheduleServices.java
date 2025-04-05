@@ -13,10 +13,23 @@ public class SummaryScheduleServices {
     private SummaryScheduleRepository summaryScheduleRepository;
 
     public List<SummarySchedulerEntity> getAllSummarySchedulesByRouteIdAndNode(Integer routeId, String node) {
-        return  summaryScheduleRepository.findAllByRouteIdAndNode(routeId, node);
+        return  summaryScheduleRepository.findLatestTicketsByRouteAndNode(routeId, node);
+    }
+
+    public List<SummarySchedulerEntity> createListSummarySchedule(List<SummarySchedulerEntity> list) {
+        return  summaryScheduleRepository.saveAll(list);
     }
 
     public SummarySchedulerEntity createSummarySchedule(SummarySchedulerEntity summaryScheduleEntity) {
         return summaryScheduleRepository.save(summaryScheduleEntity);
+    }
+
+    public SummarySchedulerEntity getLastSummaryScheduleByRouteIdAndNode(Integer routeId, String node) {
+        List<SummarySchedulerEntity> list =  summaryScheduleRepository.findAllByRouteIdAndNode(routeId, node);
+        list.sort(SummarySchedulerEntity::compareByScheduleTime);
+        if (list.isEmpty()) {
+            return null;
+        }
+        return list.get(0);
     }
 }
