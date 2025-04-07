@@ -1,0 +1,1985 @@
+{
+	"info": {
+		"_postman_id": "3cc124ea-af56-4bbf-b507-0900b406b76c",
+		"name": "POS-BUS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9110312"
+	},
+	"item": [
+		{
+			"name": "mRoute",
+			"item": [
+				{
+					"name": "mroute/create-summary-list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=utf-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=utf-8"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2Vyc2FsZW1hbjEiLCJpYXQiOjE3NDM4NzI1NTIsImV4cCI6MTc0Mzk1ODk1Mn0.8-meCMyN09p5iNc6auXlHDnD2mQidesaiWCpy8yQfXY"
+							},
+							{
+								"key": "content-length",
+								"value": "2781"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"localId\": 1,\n        \"ticketId\": 1,\n        \"routeId\": 1085,\n        \"scheduleId\": \"A1_OCP01_0271029250406\",\n        \"serialTo\": 0,\n        \"totalAmount\": 0,\n        \"totalCashAmount\": 0,\n        \"totalQRAmount\": 0,\n        \"totalMifareAmount\": null,\n        \"totalCardAmount\": 0,\n        \"totalQuantity\": 0,\n        \"goBack\": 1,\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"paymentType\": null,\n        \"scheduleTime\": \"2025-04-06T06:00:00\",\n        \"node\": \"30\",\n        \"sellerIdCard\": \"192021123\",\n        \"isSync\": null,\n        \"syncDate\": \"2025-04-06T00:02:46\",\n        \"shiftSchedulerId\": 291,\n        \"id\": 485,\n        \"totalCount\": null\n    },\n    {\n        \"localId\": 2,\n        \"ticketId\": 2,\n        \"routeId\": 1085,\n        \"scheduleId\": \"A1_OCP01_0271029250406\",\n        \"serialTo\": 3,\n        \"totalAmount\": 27000,\n        \"totalCashAmount\": 27000,\n        \"totalQRAmount\": 0,\n        \"totalMifareAmount\": null,\n        \"totalCardAmount\": 0,\n        \"totalQuantity\": 3,\n        \"goBack\": 1,\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"paymentType\": null,\n        \"scheduleTime\": \"2025-04-06T06:00:00\",\n        \"node\": \"30\",\n        \"sellerIdCard\": \"192021123\",\n        \"isSync\": null,\n        \"syncDate\": \"2025-04-06T00:02:46\",\n        \"shiftSchedulerId\": 291,\n        \"id\": 489,\n        \"totalCount\": null\n    },\n    {\n        \"localId\": 3,\n        \"ticketId\": 3,\n        \"routeId\": 1085,\n        \"scheduleId\": \"A1_OCP01_0271029250406\",\n        \"serialTo\": 0,\n        \"totalAmount\": 0,\n        \"totalCashAmount\": 0,\n        \"totalQRAmount\": 0,\n        \"totalMifareAmount\": null,\n        \"totalCardAmount\": 0,\n        \"totalQuantity\": 0,\n        \"goBack\": 1,\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"paymentType\": null,\n        \"scheduleTime\": \"2025-04-06T06:00:00\",\n        \"node\": \"30\",\n        \"sellerIdCard\": \"192021123\",\n        \"isSync\": null,\n        \"syncDate\": \"2025-04-06T00:02:46\",\n        \"shiftSchedulerId\": 291,\n        \"id\": 490,\n        \"totalCount\": null\n    },\n    {\n        \"localId\": 4,\n        \"ticketId\": 4,\n        \"routeId\": 1085,\n        \"scheduleId\": \"A1_OCP01_0271029250406\",\n        \"serialTo\": 0,\n        \"totalAmount\": 0,\n        \"totalCashAmount\": 0,\n        \"totalQRAmount\": 0,\n        \"totalMifareAmount\": null,\n        \"totalCardAmount\": 0,\n        \"totalQuantity\": 0,\n        \"goBack\": 1,\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"paymentType\": null,\n        \"scheduleTime\": \"2025-04-06T06:00:00\",\n        \"node\": \"30\",\n        \"sellerIdCard\": \"192021123\",\n        \"isSync\": null,\n        \"syncDate\": \"2025-04-06T00:02:46\",\n        \"shiftSchedulerId\": 291,\n        \"id\": 491,\n        \"totalCount\": null\n    },\n    {\n        \"localId\": 5,\n        \"ticketId\": 8,\n        \"routeId\": 1085,\n        \"scheduleId\": \"A1_OCP01_0271029250406\",\n        \"serialTo\": 0,\n        \"totalAmount\": 0,\n        \"totalCashAmount\": 0,\n        \"totalQRAmount\": 0,\n        \"totalMifareAmount\": null,\n        \"totalCardAmount\": 0,\n        \"totalQuantity\": 0,\n        \"goBack\": 1,\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"paymentType\": null,\n        \"scheduleTime\": \"2025-04-06T06:00:00\",\n        \"node\": \"30\",\n        \"sellerIdCard\": \"192021123\",\n        \"isSync\": null,\n        \"syncDate\": \"2025-04-06T00:02:46\",\n        \"shiftSchedulerId\": 291,\n        \"id\": 491,\n        \"totalCount\": null\n    },\n    {\n        \"localId\": 6,\n        \"ticketId\": 9,\n        \"routeId\": 1085,\n        \"scheduleId\": \"A1_OCP01_0271029250406\",\n        \"serialTo\": 0,\n        \"totalAmount\": 0,\n        \"totalCashAmount\": 0,\n        \"totalQRAmount\": 0,\n        \"totalMifareAmount\": null,\n        \"totalCardAmount\": 0,\n        \"totalQuantity\": 0,\n        \"goBack\": 1,\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"paymentType\": null,\n        \"scheduleTime\": \"2025-04-06T06:00:00\",\n        \"node\": \"30\",\n        \"sellerIdCard\": \"192021123\",\n        \"isSync\": null,\n        \"syncDate\": \"2025-04-06T00:02:46\",\n        \"shiftSchedulerId\": 291,\n        \"id\": 492,\n        \"totalCount\": null\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domainDev}}/pos/v1/mroute/create-summary-list",
+							"host": [
+								"{{domainDev}}"
+							],
+							"path": [
+								"pos",
+								"v1",
+								"mroute",
+								"create-summary-list"
+							]
+						},
+						"description": "Generated from cURL: curl -i \\\n\t-X POST \\\n\t-H \"Accept: application/json; charset=utf-8\" \\\n\t-H \"Content-Type: application/json; charset=utf-8\" \\\n\t-H \"Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2Vyc2FsZW1hbjEiLCJpYXQiOjE3NDM4NzI1NTIsImV4cCI6MTc0Mzk1ODk1Mn0.8-meCMyN09p5iNc6auXlHDnD2mQidesaiWCpy8yQfXY\" \\\n\t-H \"content-length: 2781\" \\\n\t-d \"[{\\\"localId\\\":1,\\\"ticketId\\\":1,\\\"routeId\\\":1085,\\\"scheduleId\\\":\\\"A1_OCP01_0271029250406\\\",\\\"serialTo\\\":0,\\\"totalAmount\\\":0.0,\\\"totalCashAmount\\\":0.0,\\\"totalQRAmount\\\":0.0,\\\"totalMifareAmount\\\":null,\\\"totalCardAmount\\\":0.0,\\\"totalQuantity\\\":0,\\\"goBack\\\":1,\\\"carId\\\":\\\"48T-9452.96\\\",\\\"driverLicense\\\":\\\"\\\",\\\"paymentType\\\":null,\\\"scheduleTime\\\":\\\"2025-04-06T06:00:00\\\",\\\"node\\\":\\\"30\\\",\\\"sellerIdCard\\\":\\\"192021123\\\",\\\"isSync\\\":null,\\\"syncDate\\\":\\\"2025-04-06T00:02:46\\\",\\\"shiftSchedulerId\\\":291,\\\"id\\\":485,\\\"totalCount\\\":null},{\\\"localId\\\":2,\\\"ticketId\\\":2,\\\"routeId\\\":1085,\\\"scheduleId\\\":\\\"A1_OCP01_0271029250406\\\",\\\"serialTo\\\":3,\\\"totalAmount\\\":27000.0,\\\"totalCashAmount\\\":27000.0,\\\"totalQRAmount\\\":0.0,\\\"totalMifareAmount\\\":null,\\\"totalCardAmount\\\":0.0,\\\"totalQuantity\\\":3,\\\"goBack\\\":1,\\\"carId\\\":\\\"48T-9452.96\\\",\\\"driverLicense\\\":\\\"\\\",\\\"paymentType\\\":null,\\\"scheduleTime\\\":\\\"2025-04-06T06:00:00\\\",\\\"node\\\":\\\"30\\\",\\\"sellerIdCard\\\":\\\"192021123\\\",\\\"isSync\\\":null,\\\"syncDate\\\":\\\"2025-04-06T00:02:46\\\",\\\"shiftSchedulerId\\\":291,\\\"id\\\":489,\\\"totalCount\\\":null},{\\\"localId\\\":3,\\\"ticketId\\\":3,\\\"routeId\\\":1085,\\\"scheduleId\\\":\\\"A1_OCP01_0271029250406\\\",\\\"serialTo\\\":0,\\\"totalAmount\\\":0.0,\\\"totalCashAmount\\\":0.0,\\\"totalQRAmount\\\":0.0,\\\"totalMifareAmount\\\":null,\\\"totalCardAmount\\\":0.0,\\\"totalQuantity\\\":0,\\\"goBack\\\":1,\\\"carId\\\":\\\"48T-9452.96\\\",\\\"driverLicense\\\":\\\"\\\",\\\"paymentType\\\":null,\\\"scheduleTime\\\":\\\"2025-04-06T06:00:00\\\",\\\"node\\\":\\\"30\\\",\\\"sellerIdCard\\\":\\\"192021123\\\",\\\"isSync\\\":null,\\\"syncDate\\\":\\\"2025-04-06T00:02:46\\\",\\\"shiftSchedulerId\\\":291,\\\"id\\\":490,\\\"totalCount\\\":null},{\\\"localId\\\":4,\\\"ticketId\\\":4,\\\"routeId\\\":1085,\\\"scheduleId\\\":\\\"A1_OCP01_0271029250406\\\",\\\"serialTo\\\":0,\\\"totalAmount\\\":0.0,\\\"totalCashAmount\\\":0.0,\\\"totalQRAmount\\\":0.0,\\\"totalMifareAmount\\\":null,\\\"totalCardAmount\\\":0.0,\\\"totalQuantity\\\":0,\\\"goBack\\\":1,\\\"carId\\\":\\\"48T-9452.96\\\",\\\"driverLicense\\\":\\\"\\\",\\\"paymentType\\\":null,\\\"scheduleTime\\\":\\\"2025-04-06T06:00:00\\\",\\\"node\\\":\\\"30\\\",\\\"sellerIdCard\\\":\\\"192021123\\\",\\\"isSync\\\":null,\\\"syncDate\\\":\\\"2025-04-06T00:02:46\\\",\\\"shiftSchedulerId\\\":291,\\\"id\\\":491,\\\"totalCount\\\":null},{\\\"localId\\\":5,\\\"ticketId\\\":8,\\\"routeId\\\":1085,\\\"scheduleId\\\":\\\"A1_OCP01_0271029250406\\\",\\\"serialTo\\\":0,\\\"totalAmount\\\":0.0,\\\"totalCashAmount\\\":0.0,\\\"totalQRAmount\\\":0.0,\\\"totalMifareAmount\\\":null,\\\"totalCardAmount\\\":0.0,\\\"totalQuantity\\\":0,\\\"goBack\\\":1,\\\"carId\\\":\\\"48T-9452.96\\\",\\\"driverLicense\\\":\\\"\\\",\\\"paymentType\\\":null,\\\"scheduleTime\\\":\\\"2025-04-06T06:00:00\\\",\\\"node\\\":\\\"30\\\",\\\"sellerIdCard\\\":\\\"192021123\\\",\\\"isSync\\\":null,\\\"syncDate\\\":\\\"2025-04-06T00:02:46\\\",\\\"shiftSchedulerId\\\":291,\\\"id\\\":491,\\\"totalCount\\\":null},{\\\"localId\\\":6,\\\"ticketId\\\":9,\\\"routeId\\\":1085,\\\"scheduleId\\\":\\\"A1_OCP01_0271029250406\\\",\\\"serialTo\\\":0,\\\"totalAmount\\\":0.0,\\\"totalCashAmount\\\":0.0,\\\"totalQRAmount\\\":0.0,\\\"totalMifareAmount\\\":null,\\\"totalCardAmount\\\":0.0,\\\"totalQuantity\\\":0,\\\"goBack\\\":1,\\\"carId\\\":\\\"48T-9452.96\\\",\\\"driverLicense\\\":\\\"\\\",\\\"paymentType\\\":null,\\\"scheduleTime\\\":\\\"2025-04-06T06:00:00\\\",\\\"node\\\":\\\"30\\\",\\\"sellerIdCard\\\":\\\"192021123\\\",\\\"isSync\\\":null,\\\"syncDate\\\":\\\"2025-04-06T00:02:46\\\",\\\"shiftSchedulerId\\\":291,\\\"id\\\":492,\\\"totalCount\\\":null}]\" \\\n\t\"http://192.168.1.24:8080/pos/v1/mroute/create-summary-list\""
+					},
+					"response": []
+				},
+				{
+					"name": "mroute/create-summary",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Lấy accessToken từ response",
+									"var responseJson = pm.response.json();",
+									"if (responseJson.accessToken) {",
+									"    pm.environment.set(\"accessToken\", responseJson.accessToken);",
+									"}",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9,vi;q=0.8"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Origin",
+								"value": "http://localhost:8080"
+							},
+							{
+								"key": "Referer",
+								"value": "http://localhost:8080/login/login.html"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"macOS\""
+							},
+							{
+								"key": "Cookie",
+								"value": "JSESSIONID=CDDDA2F8BF00BAA7C460ED144AD515AE; Idea-a11de36d=a67c93e1-967c-4120-af09-a1f1755d1e08",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ticketId\": 3032,\n    \"routeId\": 1085,\n    \"scheduleId\": \"AAAAAAAAA\",\n    \"serialTo\": 0,\n    \"totalAmount\": 207000,\n    \"totalQuantity\": 0,\n    \"goBack\": 1,\n    \"carId\": \"29T-000.19\",\n    \"driverLicense\": \"\",\n    \"scheduleTime\": \"2024-10-29T07:00:00\",\n    \"node\": \"30\",\n    \"sellerIdCard\": \"12340001\",\n    \"isSync\": 23,\n    \"syncDate\": \"2024-10-29T09:34:10\",\n    \"shiftSchedulerId\": 0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domainDev}}/pos/v1/mroute/create-summary",
+							"host": [
+								"{{domainDev}}"
+							],
+							"path": [
+								"pos",
+								"v1",
+								"mroute",
+								"create-summary"
+							]
+						},
+						"description": "Generated from cURL: curl 'http://localhost:8080/api/v1/authentication/authenticate' \\\n  -H 'Accept: */*' \\\n  -H 'Accept-Language: en-US,en;q=0.9,vi;q=0.8' \\\n  -H 'Connection: keep-alive' \\\n  -H 'Content-Type: application/json' \\\n  -b 'JSESSIONID=CDDDA2F8BF00BAA7C460ED144AD515AE; Idea-a11de36d=a67c93e1-967c-4120-af09-a1f1755d1e08' \\\n  -H 'Origin: http://localhost:8080' \\\n  -H 'Referer: http://localhost:8080/login/login.html' \\\n  -H 'Sec-Fetch-Dest: empty' \\\n  -H 'Sec-Fetch-Mode: cors' \\\n  -H 'Sec-Fetch-Site: same-origin' \\\n  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36' \\\n  -H 'sec-ch-ua: \"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"' \\\n  -H 'sec-ch-ua-mobile: ?0' \\\n  -H 'sec-ch-ua-platform: \"macOS\"' \\\n  --data-raw $'{\"username\":\"usersaleman1\",\"password\":\"PosUserSale1\\u0021@\"}'"
+					},
+					"response": []
+				},
+				{
+					"name": "mroute/create-bus-stops",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Lấy accessToken từ response",
+									"var responseJson = pm.response.json();",
+									"if (responseJson.accessToken) {",
+									"    pm.environment.set(\"accessToken\", responseJson.accessToken);",
+									"}",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9,vi;q=0.8"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Origin",
+								"value": "http://localhost:8080"
+							},
+							{
+								"key": "Referer",
+								"value": "http://localhost:8080/login/login.html"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"macOS\""
+							},
+							{
+								"key": "Cookie",
+								"value": "JSESSIONID=CDDDA2F8BF00BAA7C460ED144AD515AE; Idea-a11de36d=a67c93e1-967c-4120-af09-a1f1755d1e08",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"routeId\": 1086,\n        \"nameZh\": \"Điểm đỗ xe OCP\",\n        \"seqNo\": 1,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 1,\n        \"latitude\": 20.991131,\n        \"longitude\": 105.960279,\n        \"extVoiceNo\": \"1397\",\n        \"sid\": 32,\n        \"ivrNo\": 1397,\n        \"id\": 24237176,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1086,\n        \"nameZh\": \"Cầu tình yêu\",\n        \"seqNo\": 2,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 1,\n        \"latitude\": 20.989959,\n        \"longitude\": 105.948431,\n        \"extVoiceNo\": \"1450\",\n        \"sid\": 23,\n        \"ivrNo\": 1450,\n        \"id\": 24237166,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1086,\n        \"nameZh\": \"Trường ĐH VinUni\",\n        \"seqNo\": 3,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 1,\n        \"latitude\": 20.991345,\n        \"longitude\": 105.945995,\n        \"extVoiceNo\": \"1430\",\n        \"sid\": 24,\n        \"ivrNo\": 1430,\n        \"id\": 24237156,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1086,\n        \"nameZh\": \"Tòa nhà S2.15\",\n        \"seqNo\": 4,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 1,\n        \"latitude\": 20.990841,\n        \"longitude\": 105.943637,\n        \"extVoiceNo\": \"1431\",\n        \"sid\": 25,\n        \"ivrNo\": 1402,\n        \"id\": 24237046,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1086,\n        \"nameZh\": \"Nhà để xe S2\",\n        \"seqNo\": 5,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 1,\n        \"latitude\": 20.99139,\n        \"longitude\": 105.94079,\n        \"extVoiceNo\": \"1433\",\n        \"sid\": 26,\n        \"ivrNo\": 1433,\n        \"id\": 24236966,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1086,\n        \"nameZh\": \"Tòa nhà S2.07\",\n        \"seqNo\": 6,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 1,\n        \"latitude\": 20.993882,\n        \"longitude\": 105.940794,\n        \"extVoiceNo\": \"1434\",\n        \"sid\": 27,\n        \"ivrNo\": 1434,\n        \"id\": 24236976,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1086,\n        \"nameZh\": \"Nhà để xe S1\",\n        \"seqNo\": 7,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 1,\n        \"latitude\": 20.994806,\n        \"longitude\": 105.942215,\n        \"extVoiceNo\": \"1435\",\n        \"sid\": 6,\n        \"ivrNo\": 1406,\n        \"id\": 24236986,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1086,\n        \"nameZh\": \"Tòa nhà S1.09\",\n        \"seqNo\": 8,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 1,\n        \"latitude\": 20.994899,\n        \"longitude\": 105.944006,\n        \"extVoiceNo\": \"1436\",\n        \"sid\": 7,\n        \"ivrNo\": 1407,\n        \"id\": 24236996,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1086,\n        \"nameZh\": \"KBT Ngọc Trai 06\",\n        \"seqNo\": 9,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 1,\n        \"latitude\": 20.995606,\n        \"longitude\": 105.94827,\n        \"extVoiceNo\": \"1408\",\n        \"sid\": 8,\n        \"ivrNo\": 1408,\n        \"id\": 24237006,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1086,\n        \"nameZh\": \"KBT Sao Biển 06\",\n        \"seqNo\": 10,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 1,\n        \"latitude\": 20.997566,\n        \"longitude\": 105.953592,\n        \"extVoiceNo\": \"1438\",\n        \"sid\": 9,\n        \"ivrNo\": 1438,\n        \"id\": 24237016,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1086,\n        \"nameZh\": \"TMDV Sao Biển 11\",\n        \"seqNo\": 11,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 1,\n        \"latitude\": 20.995663,\n        \"longitude\": 105.956079,\n        \"extVoiceNo\": \"1439\",\n        \"sid\": 10,\n        \"ivrNo\": 1410,\n        \"id\": 24237026,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1086,\n        \"nameZh\": \"Vincom Mall OCP\",\n        \"seqNo\": 12,\n        \"pgp\": \"0\",\n        \"terminal\": \"1\",\n        \"districtId\": \"1\",\n        \"goBack\": 1,\n        \"latitude\": 20.993942,\n        \"longitude\": 105.958575,\n        \"extVoiceNo\": \"1411\",\n        \"sid\": 11,\n        \"ivrNo\": 1411,\n        \"id\": 24237036,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1086,\n        \"nameZh\": \"Điểm đỗ xe OCP\",\n        \"seqNo\": 1,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 2,\n        \"latitude\": 20.991131,\n        \"longitude\": 105.960279,\n        \"extVoiceNo\": \"1397\",\n        \"sid\": 32,\n        \"ivrNo\": 1397,\n        \"id\": 24237056,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1086,\n        \"nameZh\": \"Vincom Mall OCP\",\n        \"seqNo\": 2,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 2,\n        \"latitude\": 20.994039,\n        \"longitude\": 105.958695,\n        \"extVoiceNo\": \"1413\",\n        \"sid\": 13,\n        \"ivrNo\": 1413,\n        \"id\": 24237146,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1086,\n        \"nameZh\": \"TMDV Sao Biển 11A\",\n        \"seqNo\": 3,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 2,\n        \"latitude\": 20.996211,\n        \"longitude\": 105.955389,\n        \"extVoiceNo\": \"1414\",\n        \"sid\": 14,\n        \"ivrNo\": 1414,\n        \"id\": 24237066,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1086,\n        \"nameZh\": \"KBT Sao Biển 01\",\n        \"seqNo\": 4,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 2,\n        \"latitude\": 20.998173,\n        \"longitude\": 105.952995,\n        \"extVoiceNo\": \"1415\",\n        \"sid\": 15,\n        \"ivrNo\": 1415,\n        \"id\": 24237076,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1086,\n        \"nameZh\": \"KBT Ngọc Trai 08\",\n        \"seqNo\": 5,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 2,\n        \"latitude\": 20.996185,\n        \"longitude\": 105.948137,\n        \"extVoiceNo\": \"1416\",\n        \"sid\": 16,\n        \"ivrNo\": 1416,\n        \"id\": 24237086,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1086,\n        \"nameZh\": \"Tòa nhà S1.10\",\n        \"seqNo\": 6,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 2,\n        \"latitude\": 20.995831,\n        \"longitude\": 105.944466,\n        \"extVoiceNo\": \"1417\",\n        \"sid\": 17,\n        \"ivrNo\": 1417,\n        \"id\": 24237096,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1086,\n        \"nameZh\": \"Nhà để xe S1\",\n        \"seqNo\": 7,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 2,\n        \"latitude\": 20.995023,\n        \"longitude\": 105.941932,\n        \"extVoiceNo\": \"1418\",\n        \"sid\": 18,\n        \"ivrNo\": 1393,\n        \"id\": 24237106,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1086,\n        \"nameZh\": \"Tòa nhà S2.07\",\n        \"seqNo\": 8,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 2,\n        \"latitude\": 20.993911,\n        \"longitude\": 105.940619,\n        \"extVoiceNo\": \"1419\",\n        \"sid\": 28,\n        \"ivrNo\": 1419,\n        \"id\": 24237116,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1086,\n        \"nameZh\": \"Nhà để xe S2\",\n        \"seqNo\": 9,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 2,\n        \"latitude\": 20.991525,\n        \"longitude\": 105.940477,\n        \"extVoiceNo\": \"1420\",\n        \"sid\": 29,\n        \"ivrNo\": 1420,\n        \"id\": 24237126,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1086,\n        \"nameZh\": \"Trường ĐH Vin Uni\",\n        \"seqNo\": 10,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 2,\n        \"latitude\": 20.991249,\n        \"longitude\": 105.945875,\n        \"extVoiceNo\": \"1422\",\n        \"sid\": 30,\n        \"ivrNo\": 1422,\n        \"id\": 24237136,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1086,\n        \"nameZh\": \"Cầu tình yêu\",\n        \"seqNo\": 11,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 2,\n        \"latitude\": 20.989623,\n        \"longitude\": 105.949002,\n        \"extVoiceNo\": \"1450\",\n        \"sid\": 31,\n        \"ivrNo\": 1450,\n        \"id\": 24237376,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1086,\n        \"nameZh\": \"Nhà để xe Hải Âu\",\n        \"seqNo\": 12,\n        \"pgp\": \"0\",\n        \"terminal\": \"1\",\n        \"districtId\": \"1\",\n        \"goBack\": 2,\n        \"latitude\": 20.990332,\n        \"longitude\": 105.956429,\n        \"extVoiceNo\": \"1425\",\n        \"sid\": 21,\n        \"ivrNo\": 1396,\n        \"id\": 24237386,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1085,\n        \"nameZh\": \"Điểm đỗ xe OCP\",\n        \"seqNo\": 1,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 1,\n        \"latitude\": 20.991131,\n        \"longitude\": 105.960279,\n        \"extVoiceNo\": \"1397\",\n        \"sid\": 32,\n        \"ivrNo\": 1397,\n        \"id\": 2423717,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1085,\n        \"nameZh\": \"Cầu tình yêu\",\n        \"seqNo\": 2,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 1,\n        \"latitude\": 20.989959,\n        \"longitude\": 105.948431,\n        \"extVoiceNo\": \"1450\",\n        \"sid\": 23,\n        \"ivrNo\": 1450,\n        \"id\": 2423716,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1085,\n        \"nameZh\": \"Trường ĐH VinUni\",\n        \"seqNo\": 3,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 1,\n        \"latitude\": 20.991345,\n        \"longitude\": 105.945995,\n        \"extVoiceNo\": \"1430\",\n        \"sid\": 24,\n        \"ivrNo\": 1430,\n        \"id\": 2423715,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1085,\n        \"nameZh\": \"Tòa nhà S2.15\",\n        \"seqNo\": 4,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 1,\n        \"latitude\": 20.990841,\n        \"longitude\": 105.943637,\n        \"extVoiceNo\": \"1431\",\n        \"sid\": 25,\n        \"ivrNo\": 1402,\n        \"id\": 2423704,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1085,\n        \"nameZh\": \"Nhà để xe S2\",\n        \"seqNo\": 5,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 1,\n        \"latitude\": 20.99139,\n        \"longitude\": 105.94079,\n        \"extVoiceNo\": \"1433\",\n        \"sid\": 26,\n        \"ivrNo\": 1433,\n        \"id\": 2423696,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1085,\n        \"nameZh\": \"Tòa nhà S2.07\",\n        \"seqNo\": 6,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 1,\n        \"latitude\": 20.993882,\n        \"longitude\": 105.940794,\n        \"extVoiceNo\": \"1434\",\n        \"sid\": 27,\n        \"ivrNo\": 1434,\n        \"id\": 2423697,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1085,\n        \"nameZh\": \"Nhà để xe S1\",\n        \"seqNo\": 7,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 1,\n        \"latitude\": 20.994806,\n        \"longitude\": 105.942215,\n        \"extVoiceNo\": \"1435\",\n        \"sid\": 6,\n        \"ivrNo\": 1406,\n        \"id\": 2423698,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1085,\n        \"nameZh\": \"Tòa nhà S1.09\",\n        \"seqNo\": 8,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 1,\n        \"latitude\": 20.994899,\n        \"longitude\": 105.944006,\n        \"extVoiceNo\": \"1436\",\n        \"sid\": 7,\n        \"ivrNo\": 1407,\n        \"id\": 2423699,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1085,\n        \"nameZh\": \"KBT Ngọc Trai 06\",\n        \"seqNo\": 9,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 1,\n        \"latitude\": 20.995606,\n        \"longitude\": 105.94827,\n        \"extVoiceNo\": \"1408\",\n        \"sid\": 8,\n        \"ivrNo\": 1408,\n        \"id\": 2423700,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1085,\n        \"nameZh\": \"KBT Sao Biển 06\",\n        \"seqNo\": 10,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 1,\n        \"latitude\": 20.997566,\n        \"longitude\": 105.953592,\n        \"extVoiceNo\": \"1438\",\n        \"sid\": 9,\n        \"ivrNo\": 1438,\n        \"id\": 2423701,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1085,\n        \"nameZh\": \"TMDV Sao Biển 11\",\n        \"seqNo\": 11,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 1,\n        \"latitude\": 20.995663,\n        \"longitude\": 105.956079,\n        \"extVoiceNo\": \"1439\",\n        \"sid\": 10,\n        \"ivrNo\": 1410,\n        \"id\": 2423702,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1085,\n        \"nameZh\": \"Vincom Mall OCP\",\n        \"seqNo\": 12,\n        \"pgp\": \"0\",\n        \"terminal\": \"1\",\n        \"districtId\": \"1\",\n        \"goBack\": 1,\n        \"latitude\": 20.993942,\n        \"longitude\": 105.958575,\n        \"extVoiceNo\": \"1411\",\n        \"sid\": 11,\n        \"ivrNo\": 1411,\n        \"id\": 2423703,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1085,\n        \"nameZh\": \"Điểm đỗ xe OCP\",\n        \"seqNo\": 1,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 2,\n        \"latitude\": 20.991131,\n        \"longitude\": 105.960279,\n        \"extVoiceNo\": \"1397\",\n        \"sid\": 32,\n        \"ivrNo\": 1397,\n        \"id\": 2423705,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1085,\n        \"nameZh\": \"Vincom Mall OCP\",\n        \"seqNo\": 2,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 2,\n        \"latitude\": 20.994039,\n        \"longitude\": 105.958695,\n        \"extVoiceNo\": \"1413\",\n        \"sid\": 13,\n        \"ivrNo\": 1413,\n        \"id\": 2423714,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1085,\n        \"nameZh\": \"TMDV Sao Biển 11A\",\n        \"seqNo\": 3,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 2,\n        \"latitude\": 20.996211,\n        \"longitude\": 105.955389,\n        \"extVoiceNo\": \"1414\",\n        \"sid\": 14,\n        \"ivrNo\": 1414,\n        \"id\": 2423706,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1085,\n        \"nameZh\": \"KBT Sao Biển 01\",\n        \"seqNo\": 4,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 2,\n        \"latitude\": 20.998173,\n        \"longitude\": 105.952995,\n        \"extVoiceNo\": \"1415\",\n        \"sid\": 15,\n        \"ivrNo\": 1415,\n        \"id\": 2423707,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1085,\n        \"nameZh\": \"KBT Ngọc Trai 08\",\n        \"seqNo\": 5,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 2,\n        \"latitude\": 20.996185,\n        \"longitude\": 105.948137,\n        \"extVoiceNo\": \"1416\",\n        \"sid\": 16,\n        \"ivrNo\": 1416,\n        \"id\": 2423708,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1085,\n        \"nameZh\": \"Tòa nhà S1.10\",\n        \"seqNo\": 6,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 2,\n        \"latitude\": 20.995831,\n        \"longitude\": 105.944466,\n        \"extVoiceNo\": \"1417\",\n        \"sid\": 17,\n        \"ivrNo\": 1417,\n        \"id\": 2423709,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1085,\n        \"nameZh\": \"Nhà để xe S1\",\n        \"seqNo\": 7,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 2,\n        \"latitude\": 20.995023,\n        \"longitude\": 105.941932,\n        \"extVoiceNo\": \"1418\",\n        \"sid\": 18,\n        \"ivrNo\": 1393,\n        \"id\": 2423710,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1085,\n        \"nameZh\": \"Tòa nhà S2.07\",\n        \"seqNo\": 8,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 2,\n        \"latitude\": 20.993911,\n        \"longitude\": 105.940619,\n        \"extVoiceNo\": \"1419\",\n        \"sid\": 28,\n        \"ivrNo\": 1419,\n        \"id\": 2423711,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1085,\n        \"nameZh\": \"Nhà để xe S2\",\n        \"seqNo\": 9,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 2,\n        \"latitude\": 20.991525,\n        \"longitude\": 105.940477,\n        \"extVoiceNo\": \"1420\",\n        \"sid\": 29,\n        \"ivrNo\": 1420,\n        \"id\": 2423712,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1085,\n        \"nameZh\": \"Trường ĐH Vin Uni\",\n        \"seqNo\": 10,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 2,\n        \"latitude\": 20.991249,\n        \"longitude\": 105.945875,\n        \"extVoiceNo\": \"1422\",\n        \"sid\": 30,\n        \"ivrNo\": 1422,\n        \"id\": 2423713,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1085,\n        \"nameZh\": \"Cầu tình yêu\",\n        \"seqNo\": 11,\n        \"pgp\": \"0\",\n        \"terminal\": \"0\",\n        \"districtId\": \"1\",\n        \"goBack\": 2,\n        \"latitude\": 20.989623,\n        \"longitude\": 105.949002,\n        \"extVoiceNo\": \"1450\",\n        \"sid\": 31,\n        \"ivrNo\": 1450,\n        \"id\": 2423737,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"routeId\": 1085,\n        \"nameZh\": \"Nhà để xe Hải Âu\",\n        \"seqNo\": 12,\n        \"pgp\": \"0\",\n        \"terminal\": \"1\",\n        \"districtId\": \"1\",\n        \"goBack\": 2,\n        \"latitude\": 20.990332,\n        \"longitude\": 105.956429,\n        \"extVoiceNo\": \"1425\",\n        \"sid\": 21,\n        \"ivrNo\": 1396,\n        \"id\": 2423738,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domainDev}}/pos/v1/mroute/create-bus-stops",
+							"host": [
+								"{{domainDev}}"
+							],
+							"path": [
+								"pos",
+								"v1",
+								"mroute",
+								"create-bus-stops"
+							]
+						},
+						"description": "Generated from cURL: curl 'http://localhost:8080/api/v1/authentication/authenticate' \\\n  -H 'Accept: */*' \\\n  -H 'Accept-Language: en-US,en;q=0.9,vi;q=0.8' \\\n  -H 'Connection: keep-alive' \\\n  -H 'Content-Type: application/json' \\\n  -b 'JSESSIONID=CDDDA2F8BF00BAA7C460ED144AD515AE; Idea-a11de36d=a67c93e1-967c-4120-af09-a1f1755d1e08' \\\n  -H 'Origin: http://localhost:8080' \\\n  -H 'Referer: http://localhost:8080/login/login.html' \\\n  -H 'Sec-Fetch-Dest: empty' \\\n  -H 'Sec-Fetch-Mode: cors' \\\n  -H 'Sec-Fetch-Site: same-origin' \\\n  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36' \\\n  -H 'sec-ch-ua: \"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"' \\\n  -H 'sec-ch-ua-mobile: ?0' \\\n  -H 'sec-ch-ua-platform: \"macOS\"' \\\n  --data-raw $'{\"username\":\"usersaleman1\",\"password\":\"PosUserSale1\\u0021@\"}'"
+					},
+					"response": []
+				},
+				{
+					"name": "mroute/create-route",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Lấy accessToken từ response",
+									"var responseJson = pm.response.json();",
+									"if (responseJson.accessToken) {",
+									"    pm.environment.set(\"accessToken\", responseJson.accessToken);",
+									"}",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9,vi;q=0.8"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Origin",
+								"value": "http://localhost:8080"
+							},
+							{
+								"key": "Referer",
+								"value": "http://localhost:8080/login/login.html"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"macOS\""
+							},
+							{
+								"key": "Cookie",
+								"value": "JSESSIONID=CDDDA2F8BF00BAA7C460ED144AD515AE; Idea-a11de36d=a67c93e1-967c-4120-af09-a1f1755d1e08",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"providerId\": \"VB_HAN\",\n    \"nameZh\": \"OCP01\",\n    \"dDesc\": \"Ocean Park 01\",\n    \"departureZh\": \"Đối diện điểm đỗ xe Ocean Park\",\n    \"destinationZh\": \"Đối diện VinCom Mega Mall Ocean Park\",\n    \"gxCode\": \"\",\n    \"routeMapImageUrl\": \"\",\n    \"timeScheduleUrlWeight\": null,\n    \"opType\": null,\n    \"code\": \"OCP01\",\n    \"cyberRouteId\": \"5210\",\n    \"id\": 1085\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domainDev}}/pos/v1/mroute/create-route",
+							"host": [
+								"{{domainDev}}"
+							],
+							"path": [
+								"pos",
+								"v1",
+								"mroute",
+								"create-route"
+							]
+						},
+						"description": "Generated from cURL: curl 'http://localhost:8080/api/v1/authentication/authenticate' \\\n  -H 'Accept: */*' \\\n  -H 'Accept-Language: en-US,en;q=0.9,vi;q=0.8' \\\n  -H 'Connection: keep-alive' \\\n  -H 'Content-Type: application/json' \\\n  -b 'JSESSIONID=CDDDA2F8BF00BAA7C460ED144AD515AE; Idea-a11de36d=a67c93e1-967c-4120-af09-a1f1755d1e08' \\\n  -H 'Origin: http://localhost:8080' \\\n  -H 'Referer: http://localhost:8080/login/login.html' \\\n  -H 'Sec-Fetch-Dest: empty' \\\n  -H 'Sec-Fetch-Mode: cors' \\\n  -H 'Sec-Fetch-Site: same-origin' \\\n  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36' \\\n  -H 'sec-ch-ua: \"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"' \\\n  -H 'sec-ch-ua-mobile: ?0' \\\n  -H 'sec-ch-ua-platform: \"macOS\"' \\\n  --data-raw $'{\"username\":\"usersaleman1\",\"password\":\"PosUserSale1\\u0021@\"}'"
+					},
+					"response": []
+				},
+				{
+					"name": "mroute/getbyid",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Lấy accessToken từ response",
+									"var responseJson = pm.response.json();",
+									"if (responseJson.accessToken) {",
+									"    pm.environment.set(\"accessToken\", responseJson.accessToken);",
+									"}",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9,vi;q=0.8"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Origin",
+								"value": "http://localhost:8080"
+							},
+							{
+								"key": "Referer",
+								"value": "http://localhost:8080/login/login.html"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"macOS\""
+							},
+							{
+								"key": "Cookie",
+								"value": "JSESSIONID=CDDDA2F8BF00BAA7C460ED144AD515AE; Idea-a11de36d=a67c93e1-967c-4120-af09-a1f1755d1e08",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"routeId\": 1085,\n    \"node\": \"30\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domainDev}}/pos/v1/mroute/getbyid",
+							"host": [
+								"{{domainDev}}"
+							],
+							"path": [
+								"pos",
+								"v1",
+								"mroute",
+								"getbyid"
+							]
+						},
+						"description": "Generated from cURL: curl 'http://localhost:8080/api/v1/authentication/authenticate' \\\n  -H 'Accept: */*' \\\n  -H 'Accept-Language: en-US,en;q=0.9,vi;q=0.8' \\\n  -H 'Connection: keep-alive' \\\n  -H 'Content-Type: application/json' \\\n  -b 'JSESSIONID=CDDDA2F8BF00BAA7C460ED144AD515AE; Idea-a11de36d=a67c93e1-967c-4120-af09-a1f1755d1e08' \\\n  -H 'Origin: http://localhost:8080' \\\n  -H 'Referer: http://localhost:8080/login/login.html' \\\n  -H 'Sec-Fetch-Dest: empty' \\\n  -H 'Sec-Fetch-Mode: cors' \\\n  -H 'Sec-Fetch-Site: same-origin' \\\n  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36' \\\n  -H 'sec-ch-ua: \"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"' \\\n  -H 'sec-ch-ua-mobile: ?0' \\\n  -H 'sec-ch-ua-platform: \"macOS\"' \\\n  --data-raw $'{\"username\":\"usersaleman1\",\"password\":\"PosUserSale1\\u0021@\"}'"
+					},
+					"response": []
+				},
+				{
+					"name": "/mroute/get-summary",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9,vi;q=0.8"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Origin",
+								"value": "http://localhost:8080"
+							},
+							{
+								"key": "Referer",
+								"value": "http://localhost:8080/login/login.html"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"macOS\""
+							},
+							{
+								"key": "Cookie",
+								"value": "JSESSIONID=CDDDA2F8BF00BAA7C460ED144AD515AE; Idea-a11de36d=a67c93e1-967c-4120-af09-a1f1755d1e08",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"routeId\": 1085,\n    \"node\": \"30\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domainDev}}/pos/v1/mroute/get-summary",
+							"host": [
+								"{{domainDev}}"
+							],
+							"path": [
+								"pos",
+								"v1",
+								"mroute",
+								"get-summary"
+							]
+						},
+						"description": "Generated from cURL: curl 'http://localhost:8080/api/v1/authentication/authenticate' \\\n  -H 'Accept: */*' \\\n  -H 'Accept-Language: en-US,en;q=0.9,vi;q=0.8' \\\n  -H 'Connection: keep-alive' \\\n  -H 'Content-Type: application/json' \\\n  -b 'JSESSIONID=CDDDA2F8BF00BAA7C460ED144AD515AE; Idea-a11de36d=a67c93e1-967c-4120-af09-a1f1755d1e08' \\\n  -H 'Origin: http://localhost:8080' \\\n  -H 'Referer: http://localhost:8080/login/login.html' \\\n  -H 'Sec-Fetch-Dest: empty' \\\n  -H 'Sec-Fetch-Mode: cors' \\\n  -H 'Sec-Fetch-Site: same-origin' \\\n  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36' \\\n  -H 'sec-ch-ua: \"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"' \\\n  -H 'sec-ch-ua-mobile: ?0' \\\n  -H 'sec-ch-ua-platform: \"macOS\"' \\\n  --data-raw $'{\"username\":\"usersaleman1\",\"password\":\"PosUserSale1\\u0021@\"}'"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Base",
+			"item": [
+				{
+					"name": "company/create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9,vi;q=0.8"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Origin",
+								"value": "http://localhost:8080"
+							},
+							{
+								"key": "Referer",
+								"value": "http://localhost:8080/company/register_company.html"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"macOS\""
+							},
+							{
+								"key": "Cookie",
+								"value": "JSESSIONID=CDDDA2F8BF00BAA7C460ED144AD515AE; Idea-a11de36d=a67c93e1-967c-4120-af09-a1f1755d1e08"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Vận Tải Thành Công\",\n    \"systemCode\": \"HH\",\n    \"address\": \"Cộng Hoà, Phường 4, Quận Tân Bình, Tp. Hồ Chí Minh\",\n    \"phoneNumber\": \"097743633\",\n    \"description\": \"Vận Tải Thành Công là một công ty cung cấp các dịch vụ vận chuyển hàng hóa chuyên nghiệp và uy tín, cam kết mang lại sự an tâm và hiệu quả cho khách hàng. Với đội ngũ lái xe giàu kinh nghiệm và các phương tiện vận chuyển hiện đại, công ty luôn đảm bảo vận chuyển hàng hóa nhanh chóng, an toàn và đúng tiến độ.\",\n    \"systemName\": \"BUS\",\n    \"logoFileName\": \"Logo\",\n    \"logoMiniRepoId\": \"0\",\n    \"website\": \"https://vttc.com\",\n    \"overview\": \"Với phương châm “Chất lượng là hàng đầu”, Vận Tải Thành Công cam kết mang đến dịch vụ vận chuyển uy tín, chất lượng cao, đảm bảo sự an toàn cho hàng hóa và sự hài lòng cho khách hàng.\",\n    \"companyUrl\": \"https://vttc.com\",\n    \"deputy\": \"Huy\",\n    \"email\": \"vttc@gmail.com\",\n    \"taxCode\": \"190231231\",\n    \"city\": \"HCM\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domainDev}}/api/v1/company/create",
+							"host": [
+								"{{domainDev}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"company",
+								"create"
+							]
+						},
+						"description": "Generated from cURL: curl 'http://localhost:8080/api/v1/company/create' \\\n  -H 'Accept: */*' \\\n  -H 'Accept-Language: en-US,en;q=0.9,vi;q=0.8' \\\n  -H 'Connection: keep-alive' \\\n  -H 'Content-Type: application/json' \\\n  -b 'JSESSIONID=CDDDA2F8BF00BAA7C460ED144AD515AE; Idea-a11de36d=a67c93e1-967c-4120-af09-a1f1755d1e08' \\\n  -H 'Origin: http://localhost:8080' \\\n  -H 'Referer: http://localhost:8080/company/register_company.html' \\\n  -H 'Sec-Fetch-Dest: empty' \\\n  -H 'Sec-Fetch-Mode: cors' \\\n  -H 'Sec-Fetch-Site: same-origin' \\\n  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36' \\\n  -H 'sec-ch-ua: \"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"' \\\n  -H 'sec-ch-ua-mobile: ?0' \\\n  -H 'sec-ch-ua-platform: \"macOS\"' \\\n  --data-raw '{\"name\":\"Vận Tải Thành Công\",\"systemCode\":\"HH\",\"address\":\"Cộng Hoà, Phường 4, Quận Tân Bình, Tp. Hồ Chí Minh\",\"phoneNumber\":\"097743633\",\"description\":\"Vận Tải Thành Công là một công ty cung cấp các dịch vụ vận chuyển hàng hóa chuyên nghiệp và uy tín, cam kết mang lại sự an tâm và hiệu quả cho khách hàng. Với đội ngũ lái xe giàu kinh nghiệm và các phương tiện vận chuyển hiện đại, công ty luôn đảm bảo vận chuyển hàng hóa nhanh chóng, an toàn và đúng tiến độ.\",\"systemName\":\"BUS\",\"logoFileName\":\"Logo\",\"logoMiniRepoId\":\"0\",\"website\":\"https://vttc.com\",\"overview\":\"Với phương châm “Chất lượng là hàng đầu”, Vận Tải Thành Công cam kết mang đến dịch vụ vận chuyển uy tín, chất lượng cao, đảm bảo sự an toàn cho hàng hóa và sự hài lòng cho khách hàng.\",\"companyUrl\":\"https://vttc.com\",\"deputy\":\"Huy\",\"email\":\"vttc@gmail.com\",\"taxCode\":\"190231231\",\"city\":\"HCM\"}'"
+					},
+					"response": []
+				},
+				{
+					"name": "account/register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9,vi;q=0.8"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Origin",
+								"value": "http://localhost:8080"
+							},
+							{
+								"key": "Referer",
+								"value": "http://localhost:8080/register/register.html"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"macOS\""
+							},
+							{
+								"key": "Cookie",
+								"value": "JSESSIONID=CDDDA2F8BF00BAA7C460ED144AD515AE; Idea-a11de36d=a67c93e1-967c-4120-af09-a1f1755d1e08"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"usersaleman7\",\n    \"password\": \"PosUserSale1!@\",\n    \"role\": \"Sale\",\n    \"fullName\": \"Trần Văn Bảy\",\n    \"phone\": \"0918997747\",\n    \"email\": \"an_thanhcong7@gmail.com\",\n    \"avatar\": \"\",\n    \"firstName\": \"Trần\",\n    \"lastName\": \"Bảy\",\n    \"jobTitle\": \"Sale\",\n    \"routeId\": \"\",\n    \"idCard\": \"192021127\",\n    \"actived\": \"0\",\n    \"locked\": \"\",\n    \"companyId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domainDev}}/api/v1/account/register",
+							"host": [
+								"{{domainDev}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"account",
+								"register"
+							]
+						},
+						"description": "Generated from cURL: curl 'http://localhost:8080/api/v1/account/register' \\\n  -H 'Accept: */*' \\\n  -H 'Accept-Language: en-US,en;q=0.9,vi;q=0.8' \\\n  -H 'Connection: keep-alive' \\\n  -H 'Content-Type: application/json' \\\n  -b 'JSESSIONID=CDDDA2F8BF00BAA7C460ED144AD515AE; Idea-a11de36d=a67c93e1-967c-4120-af09-a1f1755d1e08' \\\n  -H 'Origin: http://localhost:8080' \\\n  -H 'Referer: http://localhost:8080/register/register.html' \\\n  -H 'Sec-Fetch-Dest: empty' \\\n  -H 'Sec-Fetch-Mode: cors' \\\n  -H 'Sec-Fetch-Site: same-origin' \\\n  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36' \\\n  -H 'sec-ch-ua: \"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"' \\\n  -H 'sec-ch-ua-mobile: ?0' \\\n  -H 'sec-ch-ua-platform: \"macOS\"' \\\n  --data-raw $'{\"username\":\"usersaleman1\",\"password\":\"PosUserSale1\\u0021@\",\"role\":\"Sale\",\"fullName\":\"Trần Văn Anh\",\"phone\":\"0918997765\",\"email\":\"an_thanhcong@gmail.com\",\"avatar\":\"\",\"firstName\":\"Trần\",\"lastName\":\"An\",\"jobTitle\":\"Sale\",\"routeId\":\"\",\"idCard\":\"192021123\",\"actived\":\"1\",\"locked\":\"\",\"companyId\":\"1\"}'"
+					},
+					"response": []
+				},
+				{
+					"name": "account/sign-out",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Lấy response body",
+									"var response = pm.response.json();",
+									"",
+									"// Kiểm tra nếu thành công và có accessToken",
+									"if (response.success && response.data && response.data.accessToken) {",
+									"    // Lưu accessToken vào biến môi trường",
+									"    pm.collectionVariables.set(\"accessToken\", response.data.accessToken);",
+									"    console.log(\"Access Token được lưu: \" + response.data.accessToken);",
+									"} else {",
+									"    console.log(\"Không tìm thấy accessToken trong response\");",
+									"}",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9,vi;q=0.8"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Origin",
+								"value": "http://localhost:8080"
+							},
+							{
+								"key": "Referer",
+								"value": "http://localhost:8080/login/login.html"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"macOS\""
+							},
+							{
+								"key": "Cookie",
+								"value": "JSESSIONID=CDDDA2F8BF00BAA7C460ED144AD515AE; Idea-a11de36d=a67c93e1-967c-4120-af09-a1f1755d1e08",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"refreshToken\": \"refreshToken\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domainDev}}/api/v1/account/sign-out",
+							"host": [
+								"{{domainDev}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"account",
+								"sign-out"
+							]
+						},
+						"description": "Generated from cURL: curl 'http://localhost:8080/api/v1/authentication/authenticate' \\\n  -H 'Accept: */*' \\\n  -H 'Accept-Language: en-US,en;q=0.9,vi;q=0.8' \\\n  -H 'Connection: keep-alive' \\\n  -H 'Content-Type: application/json' \\\n  -b 'JSESSIONID=CDDDA2F8BF00BAA7C460ED144AD515AE; Idea-a11de36d=a67c93e1-967c-4120-af09-a1f1755d1e08' \\\n  -H 'Origin: http://localhost:8080' \\\n  -H 'Referer: http://localhost:8080/login/login.html' \\\n  -H 'Sec-Fetch-Dest: empty' \\\n  -H 'Sec-Fetch-Mode: cors' \\\n  -H 'Sec-Fetch-Site: same-origin' \\\n  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36' \\\n  -H 'sec-ch-ua: \"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"' \\\n  -H 'sec-ch-ua-mobile: ?0' \\\n  -H 'sec-ch-ua-platform: \"macOS\"' \\\n  --data-raw $'{\"username\":\"usersaleman1\",\"password\":\"PosUserSale1\\u0021@\"}'"
+					},
+					"response": []
+				},
+				{
+					"name": "authentication/authenticate",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Lấy response body",
+									"var response = pm.response.json();",
+									"",
+									"// Kiểm tra nếu thành công và có accessToken",
+									"if (response.success && response.data && response.data.accessToken) {",
+									"    // Lưu accessToken vào biến môi trường",
+									"    pm.collectionVariables.set(\"accessToken\", response.data.accessToken);",
+									"    console.log(\"Access Token được lưu: \" + response.data.accessToken);",
+									"} else {",
+									"    console.log(\"Không tìm thấy accessToken trong response\");",
+									"}",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9,vi;q=0.8"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Origin",
+								"value": "http://localhost:8080"
+							},
+							{
+								"key": "Referer",
+								"value": "http://localhost:8080/login/login.html"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"macOS\""
+							},
+							{
+								"key": "Cookie",
+								"value": "JSESSIONID=CDDDA2F8BF00BAA7C460ED144AD515AE; Idea-a11de36d=a67c93e1-967c-4120-af09-a1f1755d1e08",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"usersaleman1\",\n    \"password\": \"PosUserSale1!@\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domainDev}}/api/v1/authentication/authenticate",
+							"host": [
+								"{{domainDev}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"authentication",
+								"authenticate"
+							]
+						},
+						"description": "Generated from cURL: curl 'http://localhost:8080/api/v1/authentication/authenticate' \\\n  -H 'Accept: */*' \\\n  -H 'Accept-Language: en-US,en;q=0.9,vi;q=0.8' \\\n  -H 'Connection: keep-alive' \\\n  -H 'Content-Type: application/json' \\\n  -b 'JSESSIONID=CDDDA2F8BF00BAA7C460ED144AD515AE; Idea-a11de36d=a67c93e1-967c-4120-af09-a1f1755d1e08' \\\n  -H 'Origin: http://localhost:8080' \\\n  -H 'Referer: http://localhost:8080/login/login.html' \\\n  -H 'Sec-Fetch-Dest: empty' \\\n  -H 'Sec-Fetch-Mode: cors' \\\n  -H 'Sec-Fetch-Site: same-origin' \\\n  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36' \\\n  -H 'sec-ch-ua: \"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"' \\\n  -H 'sec-ch-ua-mobile: ?0' \\\n  -H 'sec-ch-ua-platform: \"macOS\"' \\\n  --data-raw $'{\"username\":\"usersaleman1\",\"password\":\"PosUserSale1\\u0021@\"}'"
+					},
+					"response": []
+				},
+				{
+					"name": "account/get-account-info",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9,vi;q=0.8"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Origin",
+								"value": "http://localhost:8080"
+							},
+							{
+								"key": "Referer",
+								"value": "http://localhost:8080/login/login.html"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"macOS\""
+							},
+							{
+								"key": "Cookie",
+								"value": "JSESSIONID=CDDDA2F8BF00BAA7C460ED144AD515AE; Idea-a11de36d=a67c93e1-967c-4120-af09-a1f1755d1e08",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{domainDev}}/pos/v1/account/get-account-info",
+							"host": [
+								"{{domainDev}}"
+							],
+							"path": [
+								"pos",
+								"v1",
+								"account",
+								"get-account-info"
+							]
+						},
+						"description": "Generated from cURL: curl 'http://localhost:8080/api/v1/authentication/authenticate' \\\n  -H 'Accept: */*' \\\n  -H 'Accept-Language: en-US,en;q=0.9,vi;q=0.8' \\\n  -H 'Connection: keep-alive' \\\n  -H 'Content-Type: application/json' \\\n  -b 'JSESSIONID=CDDDA2F8BF00BAA7C460ED144AD515AE; Idea-a11de36d=a67c93e1-967c-4120-af09-a1f1755d1e08' \\\n  -H 'Origin: http://localhost:8080' \\\n  -H 'Referer: http://localhost:8080/login/login.html' \\\n  -H 'Sec-Fetch-Dest: empty' \\\n  -H 'Sec-Fetch-Mode: cors' \\\n  -H 'Sec-Fetch-Site: same-origin' \\\n  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36' \\\n  -H 'sec-ch-ua: \"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"' \\\n  -H 'sec-ch-ua-mobile: ?0' \\\n  -H 'sec-ch-ua-platform: \"macOS\"' \\\n  --data-raw $'{\"username\":\"usersaleman1\",\"password\":\"PosUserSale1\\u0021@\"}'"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "scheduler",
+			"item": [
+				{
+					"name": "shiftscheduler/inserts-today",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Lấy accessToken từ response",
+									"var responseJson = pm.response.json();",
+									"if (responseJson.accessToken) {",
+									"    pm.environment.set(\"accessToken\", responseJson.accessToken);",
+									"}",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9,vi;q=0.8"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Origin",
+								"value": "http://localhost:8080"
+							},
+							{
+								"key": "Referer",
+								"value": "http://localhost:8080/login/login.html"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"macOS\""
+							},
+							{
+								"key": "Cookie",
+								"value": "JSESSIONID=CDDDA2F8BF00BAA7C460ED144AD515AE; Idea-a11de36d=a67c93e1-967c-4120-af09-a1f1755d1e08",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"goBack\": \"1\",\n        \"routeId\": 1085,\n        \"scheduleId\": \"A1_OCP01_0271029\",\n        \"scheduleTime\": \"2025-03-29T06:00:00\",\n        \"sellerIdCard\": \"192021123\",\n        \"node\": \"30\",\n        \"id\": 244286,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"goBack\": \"2\",\n        \"routeId\": 1085,\n        \"scheduleId\": \"A1_OCP01_0282029\",\n        \"scheduleTime\": \"2025-03-29T06:30:00\",\n        \"sellerIdCard\": \"192021123\",\n        \"node\": \"30\",\n        \"id\": 244296,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"goBack\": \"1\",\n        \"routeId\": 1085,\n        \"scheduleId\": \"A1_OCP01_0293029\",\n        \"scheduleTime\": \"2025-03-29T07:00:00\",\n        \"sellerIdCard\": \"192021123\",\n        \"node\": \"30\",\n        \"id\": 24430,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"goBack\": \"2\",\n        \"routeId\": 1085,\n        \"scheduleId\": \"A1_OCP01_0304029\",\n        \"scheduleTime\": \"2025-03-29T07:30:00\",\n        \"sellerIdCard\": \"192021123\",\n        \"node\": \"30\",\n        \"id\": 24431,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"goBack\": \"1\",\n        \"routeId\": 1085,\n        \"scheduleId\": \"A1_OCP01_0315029\",\n        \"scheduleTime\": \"2025-03-29T08:00:00\",\n        \"sellerIdCard\": \"192021123\",\n        \"node\": \"30\",\n        \"id\": 24432,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"goBack\": \"2\",\n        \"routeId\": 1085,\n        \"scheduleId\": \"A1_OCP01_0326029\",\n        \"scheduleTime\": \"2025-03-29T08:30:00\",\n        \"sellerIdCard\": \"192021123\",\n        \"node\": \"30\",\n        \"id\": 24433,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"goBack\": \"1\",\n        \"routeId\": 1085,\n        \"scheduleId\": \"A1_OCP01_0337029\",\n        \"scheduleTime\": \"2025-03-29T09:00:00\",\n        \"sellerIdCard\": \"192021123\",\n        \"node\": \"30\",\n        \"id\": 24434,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"goBack\": \"2\",\n        \"routeId\": 1085,\n        \"scheduleId\": \"A1_OCP01_0348029\",\n        \"scheduleTime\": \"2025-03-29T09:30:00\",\n        \"sellerIdCard\": \"192021123\",\n        \"node\": \"30\",\n        \"id\": 24435,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"goBack\": \"1\",\n        \"routeId\": 1085,\n        \"scheduleId\": \"A1_OCP01_0359029\",\n        \"scheduleTime\": \"2025-03-29T10:00:00\",\n        \"sellerIdCard\": \"192021123\",\n        \"node\": \"30\",\n        \"id\": 24436,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"goBack\": \"2\",\n        \"routeId\": 1085,\n        \"scheduleId\": \"A1_OCP01_0370029\",\n        \"scheduleTime\": \"2025-03-29T10:30:00\",\n        \"sellerIdCard\": \"192021123\",\n        \"node\": \"30\",\n        \"id\": 24437,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"goBack\": \"1\",\n        \"routeId\": 1085,\n        \"scheduleId\": \"A1_OCP01_0381029\",\n        \"scheduleTime\": \"2025-03-29T11:00:00\",\n        \"sellerIdCard\": \"192021123\",\n        \"node\": \"30\",\n        \"id\": 24438,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"goBack\": \"2\",\n        \"routeId\": 1085,\n        \"scheduleId\": \"A1_OCP01_0392029\",\n        \"scheduleTime\": \"2025-03-29T11:30:00\",\n        \"sellerIdCard\": \"192021123\",\n        \"node\": \"30\",\n        \"id\": 24439,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"goBack\": \"1\",\n        \"routeId\": 1085,\n        \"scheduleId\": \"A1_OCP01_0403029\",\n        \"scheduleTime\": \"2025-03-29T12:00:00\",\n        \"sellerIdCard\": \"192021123\",\n        \"node\": \"30\",\n        \"id\": 24440,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"goBack\": \"2\",\n        \"routeId\": 1085,\n        \"scheduleId\": \"A1_OCP01_0414029\",\n        \"scheduleTime\": \"2025-03-29T12:30:00\",\n        \"sellerIdCard\": \"192021123\",\n        \"node\": \"30\",\n        \"id\": 24441,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"goBack\": \"1\",\n        \"routeId\": 1085,\n        \"scheduleId\": \"A1_OCP01_0425029\",\n        \"scheduleTime\": \"2025-03-29T13:00:00\",\n        \"sellerIdCard\": \"192021123\",\n        \"node\": \"30\",\n        \"id\": 24442,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"goBack\": \"2\",\n        \"routeId\": 1085,\n        \"scheduleId\": \"A1_OCP01_0436029\",\n        \"scheduleTime\": \"2025-03-29T13:30:00\",\n        \"sellerIdCard\": \"192021123\",\n        \"node\": \"30\",\n        \"id\": 24443,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"goBack\": \"1\",\n        \"routeId\": 1085,\n        \"scheduleId\": \"A1_OCP01_0447029\",\n        \"scheduleTime\": \"2025-03-29T14:00:00\",\n        \"sellerIdCard\": \"192021123\",\n        \"node\": \"30\",\n        \"id\": 24444,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"goBack\": \"2\",\n        \"routeId\": 1085,\n        \"scheduleId\": \"A1_OCP01_0458029\",\n        \"scheduleTime\": \"2025-03-29T14:30:00\",\n        \"sellerIdCard\": \"192021123\",\n        \"node\": \"30\",\n        \"id\": 24445,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"goBack\": \"1\",\n        \"routeId\": 1085,\n        \"scheduleId\": \"A1_OCP01_0469029\",\n        \"scheduleTime\": \"2025-03-29T15:00:00\",\n        \"sellerIdCard\": \"192021123\",\n        \"node\": \"30\",\n        \"id\": 24446,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"goBack\": \"1\",\n        \"routeId\": 1086,\n        \"scheduleId\": \"A1_OCP01_60271029\",\n        \"scheduleTime\": \"2025-03-29T06:00:00\",\n        \"sellerIdCard\": \"192021123\",\n        \"node\": \"30\",\n        \"id\": 2442866,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"goBack\": \"2\",\n        \"routeId\": 1086,\n        \"scheduleId\": \"A1_OCP01_60282029\",\n        \"scheduleTime\": \"2025-03-29T06:30:00\",\n        \"sellerIdCard\": \"192021123\",\n        \"node\": \"30\",\n        \"id\": 2442966,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"goBack\": \"1\",\n        \"routeId\": 1086,\n        \"scheduleId\": \"A1_OCP01_60293029\",\n        \"scheduleTime\": \"2025-03-29T07:00:00\",\n        \"sellerIdCard\": \"192021123\",\n        \"node\": \"30\",\n        \"id\": 244306,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"goBack\": \"2\",\n        \"routeId\": 1086,\n        \"scheduleId\": \"A1_OCP01_60304029\",\n        \"scheduleTime\": \"2025-03-29T07:30:00\",\n        \"sellerIdCard\": \"192021123\",\n        \"node\": \"30\",\n        \"id\": 244316,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"goBack\": \"1\",\n        \"routeId\": 1086,\n        \"scheduleId\": \"A1_OCP01_60315029\",\n        \"scheduleTime\": \"2025-03-29T08:00:00\",\n        \"sellerIdCard\": \"192021123\",\n        \"node\": \"30\",\n        \"id\": 244326,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"goBack\": \"2\",\n        \"routeId\": 1086,\n        \"scheduleId\": \"A1_OCP01_60326029\",\n        \"scheduleTime\": \"2025-03-29T08:30:00\",\n        \"sellerIdCard\": \"192021123\",\n        \"node\": \"30\",\n        \"id\": 244336,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"goBack\": \"1\",\n        \"routeId\": 1086,\n        \"scheduleId\": \"A1_OCP01_60337029\",\n        \"scheduleTime\": \"2025-03-29T09:00:00\",\n        \"sellerIdCard\": \"192021123\",\n        \"node\": \"30\",\n        \"id\": 244346,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"goBack\": \"2\",\n        \"routeId\": 1086,\n        \"scheduleId\": \"A1_OCP01_60348029\",\n        \"scheduleTime\": \"2025-03-29T09:30:00\",\n        \"sellerIdCard\": \"192021123\",\n        \"node\": \"30\",\n        \"id\": 244356,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"goBack\": \"1\",\n        \"routeId\": 1086,\n        \"scheduleId\": \"A1_OCP01_60359029\",\n        \"scheduleTime\": \"2025-03-29T10:00:00\",\n        \"sellerIdCard\": \"192021123\",\n        \"node\": \"30\",\n        \"id\": 244366,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"goBack\": \"2\",\n        \"routeId\": 1086,\n        \"scheduleId\": \"A1_OCP01_60370029\",\n        \"scheduleTime\": \"2025-03-29T10:30:00\",\n        \"sellerIdCard\": \"192021123\",\n        \"node\": \"30\",\n        \"id\": 244376,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"goBack\": \"1\",\n        \"routeId\": 1086,\n        \"scheduleId\": \"A1_OCP01_60381029\",\n        \"scheduleTime\": \"2025-03-29T11:00:00\",\n        \"sellerIdCard\": \"192021123\",\n        \"node\": \"30\",\n        \"id\": 244386,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"goBack\": \"2\",\n        \"routeId\": 1086,\n        \"scheduleId\": \"A1_OCP01_60392029\",\n        \"scheduleTime\": \"2025-03-29T11:30:00\",\n        \"sellerIdCard\": \"192021123\",\n        \"node\": \"30\",\n        \"id\": 244396,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"goBack\": \"1\",\n        \"routeId\": 1086,\n        \"scheduleId\": \"A1_OCP01_60403029\",\n        \"scheduleTime\": \"2025-03-29T12:00:00\",\n        \"sellerIdCard\": \"192021123\",\n        \"node\": \"30\",\n        \"id\": 244406,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"goBack\": \"2\",\n        \"routeId\": 1086,\n        \"scheduleId\": \"A1_OCP01_60414029\",\n        \"scheduleTime\": \"2025-03-29T12:30:00\",\n        \"sellerIdCard\": \"192021123\",\n        \"node\": \"30\",\n        \"id\": 244416,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"goBack\": \"1\",\n        \"routeId\": 1086,\n        \"scheduleId\": \"A1_OCP01_60425029\",\n        \"scheduleTime\": \"2025-03-29T13:00:00\",\n        \"sellerIdCard\": \"192021123\",\n        \"node\": \"30\",\n        \"id\": 244426,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"goBack\": \"2\",\n        \"routeId\": 1086,\n        \"scheduleId\": \"A1_OCP01_60436029\",\n        \"scheduleTime\": \"2025-03-29T13:30:00\",\n        \"sellerIdCard\": \"192021123\",\n        \"node\": \"30\",\n        \"id\": 244436,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"goBack\": \"1\",\n        \"routeId\": 1086,\n        \"scheduleId\": \"A1_OCP01_60447029\",\n        \"scheduleTime\": \"2025-03-29T14:00:00\",\n        \"sellerIdCard\": \"192021123\",\n        \"node\": \"30\",\n        \"id\": 244446,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"goBack\": \"2\",\n        \"routeId\": 1086,\n        \"scheduleId\": \"A1_OCP01_60458029\",\n        \"scheduleTime\": \"2025-03-29T14:30:00\",\n        \"sellerIdCard\": \"192021123\",\n        \"node\": \"30\",\n        \"id\": 244456,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"carId\": \"48T-9452.96\",\n        \"driverLicense\": \"\",\n        \"goBack\": \"1\",\n        \"routeId\": 1086,\n        \"scheduleId\": \"A1_OCP01_60469029\",\n        \"scheduleTime\": \"2025-03-29T15:00:00\",\n        \"sellerIdCard\": \"192021123\",\n        \"node\": \"30\",\n        \"id\": 244466,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domainDev}}/pos/v1/shiftscheduler/inserts-today",
+							"host": [
+								"{{domainDev}}"
+							],
+							"path": [
+								"pos",
+								"v1",
+								"shiftscheduler",
+								"inserts-today"
+							]
+						},
+						"description": "Generated from cURL: curl 'http://localhost:8080/api/v1/authentication/authenticate' \\\n  -H 'Accept: */*' \\\n  -H 'Accept-Language: en-US,en;q=0.9,vi;q=0.8' \\\n  -H 'Connection: keep-alive' \\\n  -H 'Content-Type: application/json' \\\n  -b 'JSESSIONID=CDDDA2F8BF00BAA7C460ED144AD515AE; Idea-a11de36d=a67c93e1-967c-4120-af09-a1f1755d1e08' \\\n  -H 'Origin: http://localhost:8080' \\\n  -H 'Referer: http://localhost:8080/login/login.html' \\\n  -H 'Sec-Fetch-Dest: empty' \\\n  -H 'Sec-Fetch-Mode: cors' \\\n  -H 'Sec-Fetch-Site: same-origin' \\\n  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36' \\\n  -H 'sec-ch-ua: \"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"' \\\n  -H 'sec-ch-ua-mobile: ?0' \\\n  -H 'sec-ch-ua-platform: \"macOS\"' \\\n  --data-raw $'{\"username\":\"usersaleman1\",\"password\":\"PosUserSale1\\u0021@\"}'"
+					},
+					"response": []
+				},
+				{
+					"name": "shiftscheduler/getbydate",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Lấy accessToken từ response",
+									"var responseJson = pm.response.json();",
+									"if (responseJson.accessToken) {",
+									"    pm.environment.set(\"accessToken\", responseJson.accessToken);",
+									"}",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9,vi;q=0.8"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Origin",
+								"value": "http://localhost:8080"
+							},
+							{
+								"key": "Referer",
+								"value": "http://localhost:8080/login/login.html"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"macOS\""
+							},
+							{
+								"key": "Cookie",
+								"value": "JSESSIONID=CDDDA2F8BF00BAA7C460ED144AD515AE; Idea-a11de36d=a67c93e1-967c-4120-af09-a1f1755d1e08",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"sellerIdCard\": \"192021123\",\n    \"scheduleTime\": \"2025-04-03T00:31:34\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domainDev}}/pos/v1/shiftscheduler/getbydate",
+							"host": [
+								"{{domainDev}}"
+							],
+							"path": [
+								"pos",
+								"v1",
+								"shiftscheduler",
+								"getbydate"
+							]
+						},
+						"description": "Generated from cURL: curl 'http://localhost:8080/api/v1/authentication/authenticate' \\\n  -H 'Accept: */*' \\\n  -H 'Accept-Language: en-US,en;q=0.9,vi;q=0.8' \\\n  -H 'Connection: keep-alive' \\\n  -H 'Content-Type: application/json' \\\n  -b 'JSESSIONID=CDDDA2F8BF00BAA7C460ED144AD515AE; Idea-a11de36d=a67c93e1-967c-4120-af09-a1f1755d1e08' \\\n  -H 'Origin: http://localhost:8080' \\\n  -H 'Referer: http://localhost:8080/login/login.html' \\\n  -H 'Sec-Fetch-Dest: empty' \\\n  -H 'Sec-Fetch-Mode: cors' \\\n  -H 'Sec-Fetch-Site: same-origin' \\\n  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36' \\\n  -H 'sec-ch-ua: \"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"' \\\n  -H 'sec-ch-ua-mobile: ?0' \\\n  -H 'sec-ch-ua-platform: \"macOS\"' \\\n  --data-raw $'{\"username\":\"usersaleman1\",\"password\":\"PosUserSale1\\u0021@\"}'"
+					},
+					"response": []
+				},
+				{
+					"name": "shiftscheduler/remove-all",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9,vi;q=0.8"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Origin",
+								"value": "http://localhost:8080"
+							},
+							{
+								"key": "Referer",
+								"value": "http://localhost:8080/login/login.html"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"macOS\""
+							},
+							{
+								"key": "Cookie",
+								"value": "JSESSIONID=CDDDA2F8BF00BAA7C460ED144AD515AE; Idea-a11de36d=a67c93e1-967c-4120-af09-a1f1755d1e08",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{domainDev}}/pos/v1/shiftscheduler/remove-all",
+							"host": [
+								"{{domainDev}}"
+							],
+							"path": [
+								"pos",
+								"v1",
+								"shiftscheduler",
+								"remove-all"
+							]
+						},
+						"description": "Generated from cURL: curl 'http://localhost:8080/api/v1/authentication/authenticate' \\\n  -H 'Accept: */*' \\\n  -H 'Accept-Language: en-US,en;q=0.9,vi;q=0.8' \\\n  -H 'Connection: keep-alive' \\\n  -H 'Content-Type: application/json' \\\n  -b 'JSESSIONID=CDDDA2F8BF00BAA7C460ED144AD515AE; Idea-a11de36d=a67c93e1-967c-4120-af09-a1f1755d1e08' \\\n  -H 'Origin: http://localhost:8080' \\\n  -H 'Referer: http://localhost:8080/login/login.html' \\\n  -H 'Sec-Fetch-Dest: empty' \\\n  -H 'Sec-Fetch-Mode: cors' \\\n  -H 'Sec-Fetch-Site: same-origin' \\\n  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36' \\\n  -H 'sec-ch-ua: \"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"' \\\n  -H 'sec-ch-ua-mobile: ?0' \\\n  -H 'sec-ch-ua-platform: \"macOS\"' \\\n  --data-raw $'{\"username\":\"usersaleman1\",\"password\":\"PosUserSale1\\u0021@\"}'"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Bussiness Settings",
+			"item": [
+				{
+					"name": "businesssetting/insert-list-businesssetting",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9,vi;q=0.8"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"settingType\": \"POS_PARA\",\n        \"settingKey\": \"POS_TICKET_ADD\",\n        \"settingValue\": \"Tân Bình, Tp. Hồ Chí Minh\",\n        \"description\": \"HCM\",\n        \"companyId\": 0,\n        \"id\": 1119,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"settingType\": \"POS_PARA\",\n        \"settingKey\": \"POS_TICKET_TAX\",\n        \"settingValue\": \"100889988\",\n        \"description\": \"100889988\",\n        \"companyId\": 0,\n        \"id\": 1120,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"settingType\": \"POS_PARA\",\n        \"settingKey\": \"POS_TICKET_HOTLINE\",\n        \"settingValue\": \"19001234\",\n        \"description\": \"19001234 - 19001234\",\n        \"companyId\": 0,\n        \"id\": 1121,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"settingType\": \"POS_PARA\",\n        \"settingKey\": \"POS_TICKET_ADD_HCM\",\n        \"settingValue\": \"Tầng 20A Vincom Center, 72 Lê Thánh Tôn,\\nP.Bến Nghé, Q.1, TP.HCM, VN\",\n        \"description\": \"HCM\",\n        \"companyId\": 0,\n        \"id\": 1126,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"settingType\": \"POS_PARA\",\n        \"settingKey\": \"POS_TICKET_HOTLINE_HCM\",\n        \"settingValue\": \"1900 123 123\",\n        \"description\": \"HCM\",\n        \"companyId\": 0,\n        \"id\": 1127,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"settingType\": \"POS_PARA\",\n        \"settingKey\": \"POS_TICKET_TAX_HCM\",\n        \"settingValue\": \"40336688\",\n        \"description\": \"HCM\",\n        \"companyId\": 0,\n        \"id\": 1128,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"settingType\": \"POS_PARA\",\n        \"settingKey\": \"POS_TICKET_MINI_NOTE_HCM_LINE_2\",\n        \"settingValue\": \"Vietcombank, Agribank, TPBank, BIDV, VIB,\",\n        \"description\": null,\n        \"companyId\": 0,\n        \"id\": 1135,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"settingType\": \"POS_PARA\",\n        \"settingKey\": \"POS_TICKET_MINI_NOTE_HCM_LINE_3\",\n        \"settingValue\": \"SHB, SeaBank, VietBank, Woori, Nam Á Bank\",\n        \"description\": null,\n        \"companyId\": 0,\n        \"id\": 1136,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"settingType\": \"OBJECT_CARD\",\n        \"settingKey\": \"HSSV\",\n        \"settingValue\": \"Học Sinh, Sinh viên còn nhỏ\",\n        \"description\": \"Học Sinh, Sinh viên các trường\",\n        \"companyId\": 0,\n        \"id\": 2,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"settingType\": \"OBJECT_CARD\",\n        \"settingKey\": \"NCT\",\n        \"settingValue\": \"Người cao tuổi\",\n        \"description\": \"Người cao tuổi trên 60t\",\n        \"companyId\": 0,\n        \"id\": 1020,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"settingType\": \"OBJECT_CARD\",\n        \"settingKey\": \"CN\",\n        \"settingValue\": \"Công nhân khu CN\",\n        \"description\": \"Công nhân khu CN\",\n        \"companyId\": 0,\n        \"id\": 1021,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"settingType\": \"OBJECT_CARD\",\n        \"settingKey\": \"NKT\",\n        \"settingValue\": \"Người khuyết tật\",\n        \"description\": \"Người khuyết tật\",\n        \"companyId\": 0,\n        \"id\": 1022,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"settingType\": \"OBJECT_CARD\",\n        \"settingKey\": \"HN\",\n        \"settingValue\": \"Hộ nghèo\",\n        \"description\": \"Hộ nghèo\",\n        \"companyId\": 0,\n        \"id\": 1023,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"settingType\": \"OBJECT_CARD\",\n        \"settingKey\": \"NCC\",\n        \"settingValue\": \"Người có công\",\n        \"description\": \"Người có công\",\n        \"companyId\": 0,\n        \"id\": 1024,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"settingType\": \"OBJECT_CARD\",\n        \"settingKey\": \"TBBB\",\n        \"settingValue\": \"Thương binh, bệnh binh\",\n        \"description\": \"Thương binh, bệnh binh\",\n        \"companyId\": 0,\n        \"id\": 1025,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"settingType\": \"OBJECT_CARD\",\n        \"settingKey\": \"CDHH\",\n        \"settingValue\": \"Người nhiễm chất độc hóa học\",\n        \"description\": \"Người nhiễm chất độc hóa học\",\n        \"companyId\": 0,\n        \"id\": 1026,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"settingType\": \"OBJECT_CARD\",\n        \"settingKey\": \"VTND\",\n        \"settingValue\": \"Anh hùng LLVTND\",\n        \"description\": \"Anh hùng LLVTND\",\n        \"companyId\": 0,\n        \"id\": 1027,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"settingType\": \"OBJECT_CARD\",\n        \"settingKey\": \"LTCM\",\n        \"settingValue\": \"Lão thành cách mạng\",\n        \"description\": \"Lão thành cách mạng\",\n        \"companyId\": 0,\n        \"id\": 1028,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"settingType\": \"OBJECT_CARD\",\n        \"settingKey\": \"TKN\",\n        \"settingValue\": \"Tiền khởi nghĩa\",\n        \"description\": \"Tiền khởi nghĩa\",\n        \"companyId\": 0,\n        \"id\": 1029,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"settingType\": \"OBJECT_CARD\",\n        \"settingKey\": \"BMVN\",\n        \"settingValue\": \"Bà mẹ VN anh hùng\",\n        \"description\": \"Bà mẹ VN anh hùng\",\n        \"companyId\": 0,\n        \"id\": 1030,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"settingType\": \"OBJECT_CARD\",\n        \"settingKey\": \"TKKC\",\n        \"settingValue\": \"Anh hùng LĐ TKKC\",\n        \"description\": \"\",\n        \"companyId\": 0,\n        \"id\": 1031,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    },\n    {\n        \"settingType\": \"OBJECT_CARD\",\n        \"settingKey\": \"DTD\",\n        \"settingValue\": \"Người bị bắt đi tù đày\",\n        \"description\": \"\",\n        \"companyId\": 0,\n        \"id\": 1032,\n        \"createdBy\": null,\n        \"createdDate\": null,\n        \"updatedBy\": null,\n        \"updatedDate\": null,\n        \"deletedBy\": null,\n        \"deletedDate\": null,\n        \"totalCount\": 0\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domainDev}}/pos/v1/businesssetting/insert-businesssetting",
+							"host": [
+								"{{domainDev}}"
+							],
+							"path": [
+								"pos",
+								"v1",
+								"businesssetting",
+								"insert-businesssetting"
+							]
+						},
+						"description": "Generated from cURL: curl 'http://localhost:8080/api/v1/authentication/authenticate' \\\n  -H 'Accept: */*' \\\n  -H 'Accept-Language: en-US,en;q=0.9,vi;q=0.8' \\\n  -H 'Connection: keep-alive' \\\n  -H 'Content-Type: application/json' \\\n  -b 'JSESSIONID=CDDDA2F8BF00BAA7C460ED144AD515AE; Idea-a11de36d=a67c93e1-967c-4120-af09-a1f1755d1e08' \\\n  -H 'Origin: http://localhost:8080' \\\n  -H 'Referer: http://localhost:8080/login/login.html' \\\n  -H 'Sec-Fetch-Dest: empty' \\\n  -H 'Sec-Fetch-Mode: cors' \\\n  -H 'Sec-Fetch-Site: same-origin' \\\n  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36' \\\n  -H 'sec-ch-ua: \"Chromium\";v=\"134\", \"Not:A-Brand\";v=\"24\", \"Google Chrome\";v=\"134\"' \\\n  -H 'sec-ch-ua-mobile: ?0' \\\n  -H 'sec-ch-ua-platform: \"macOS\"' \\\n  --data-raw $'{\"username\":\"usersaleman1\",\"password\":\"PosUserSale1\\u0021@\"}'"
+					},
+					"response": []
+				},
+				{
+					"name": "businesssetting/pos-para",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domainDev}}/pos/v1/businesssetting/pos-para",
+							"host": [
+								"{{domainDev}}"
+							],
+							"path": [
+								"pos",
+								"v1",
+								"businesssetting",
+								"pos-para"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "businesssetting/object-type",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domainDev}}/pos/v1/businesssetting/object-type",
+							"host": [
+								"{{domainDev}}"
+							],
+							"path": [
+								"pos",
+								"v1",
+								"businesssetting",
+								"object-type"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ticket",
+			"item": [
+				{
+					"name": "ticketproduct/getbyrouteid",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{domainDev}}/pos/v1/ticketproduct/getbyrouteid?routeId=1086",
+							"host": [
+								"{{domainDev}}"
+							],
+							"path": [
+								"pos",
+								"v1",
+								"ticketproduct",
+								"getbyrouteid"
+							],
+							"query": [
+								{
+									"key": "routeId",
+									"value": "1086"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ticketproduct/insert-list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"name\": \"Tem Tháng Ưu tiên cho OP02\",\n        \"code\": \"VIN000026\",\n        \"amount\": 100000,\n        \"serialFormat\": \"{MA_TUYEN}{YEAR}{CARD_TYPE}{SEQUENCE}\",\n        \"routeId\": 1086,\n        \"description\": null,\n        \"type\": \"THANG\",\n        \"isActive\": 1,\n        \"temThangType\": \"UU_TIEN\",\n        \"objectType\": \"HSSV\",\n        \"isMultiRoutes\": false\n    },\n    {\n        \"name\": \"Vé lượt OP02\",\n        \"code\": \"VIN000028\",\n        \"amount\": 9000,\n        \"serialFormat\": \"{MA_TUYEN}{YEAR}{NODE}{SEQUENCE}\",\n        \"routeId\": 1086,\n        \"description\": null,\n        \"type\": \"LUOT\",\n        \"isActive\": 1,\n        \"temThangType\": null,\n        \"objectType\": null,\n        \"isMultiRoutes\": false\n    },\n    {\n        \"name\": \"Vé Giấy Lượt\",\n        \"code\": \"VIN000051\",\n        \"amount\": 10000,\n        \"serialFormat\": null,\n        \"routeId\": 1086,\n        \"description\": \"dsdsfádfádfádf\",\n        \"type\": \"LUOTGIAY\",\n        \"isActive\": 1,\n        \"temThangType\": null,\n        \"objectType\": null,\n        \"isMultiRoutes\": false\n    },\n    {\n        \"name\": \"OCP02 - Vé Tháng Thường\",\n        \"code\": \"VIN000056\",\n        \"amount\": 150000,\n        \"serialFormat\": \"{MA_TUYEN}{YEAR}{CARD_TYPE}{SEQUENCE}\",\n        \"routeId\": 1086,\n        \"description\": null,\n        \"type\": \"THANG\",\n        \"isActive\": 1,\n        \"temThangType\": \"BINH_THUONG\",\n        \"objectType\": null,\n        \"isMultiRoutes\": false\n    },\n    {\n        \"name\": \"Liên tuyến - Vé tháng - Bình thường\",\n        \"code\": \"VIN000068\",\n        \"amount\": 150000,\n        \"serialFormat\": \"{MA_TUYEN}.{YEAR}.{SEQUENCE}\",\n        \"routeId\": 9,\n        \"description\": null,\n        \"type\": \"THANG\",\n        \"isActive\": 1,\n        \"temThangType\": \"BINH_THUONG\",\n        \"objectType\": null,\n        \"isMultiRoutes\": true\n    },\n    {\n        \"name\": \"Liên tuyến - Vé Tháng - Ưu tiên - HSSV\",\n        \"code\": \"VIN000069\",\n        \"amount\": 100000,\n        \"serialFormat\": \"{MA_TUYEN}{YEAR}{CARD_TYPE}{SEQUENCE}\",\n        \"routeId\": 9,\n        \"description\": null,\n        \"type\": \"THANG\",\n        \"isActive\": 1,\n        \"temThangType\": \"UU_TIEN\",\n        \"objectType\": \"HSSV\",\n        \"isMultiRoutes\": true\n    },\n    {\n        \"name\": \"Liên tuyến - Vé tháng - Ưu tiên - CN\",\n        \"code\": \"VIN000070\",\n        \"amount\": 175000,\n        \"serialFormat\": \"{MA_TUYEN}{YEAR}{CARD_TYPE}{SEQUENCE}\",\n        \"routeId\": 9,\n        \"description\": null,\n        \"type\": \"THANG\",\n        \"isActive\": 1,\n        \"temThangType\": \"UU_TIEN\",\n        \"objectType\": \"CN\",\n        \"isMultiRoutes\": true\n    },\n    {\n        \"name\": \"OCP02 Ưu tiên CN\",\n        \"code\": \"VIN000071\",\n        \"amount\": 80000,\n        \"serialFormat\": \"{YEAR}-{MA_DV}-{MA_TUYEN}-{SEQUENCE}\",\n        \"routeId\": 1086,\n        \"description\": \"Thẻ tháng CN\",\n        \"type\": \"THANG\",\n        \"isActive\": 1,\n        \"temThangType\": \"UU_TIEN\",\n        \"objectType\": \"CN\",\n        \"isMultiRoutes\": false\n    },\n    {\n        \"name\": \"Chi phí bổ sung OCP02\",\n        \"code\": \"VIN000076\",\n        \"amount\": 20000,\n        \"serialFormat\": null,\n        \"routeId\": 1086,\n        \"description\": null,\n        \"type\": \"ADDITION\",\n        \"isActive\": 1,\n        \"temThangType\": null,\n        \"objectType\": null,\n        \"isMultiRoutes\": false\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domainDev}}/pos/v1/ticketproduct/insert-list",
+							"host": [
+								"{{domainDev}}"
+							],
+							"path": [
+								"pos",
+								"v1",
+								"ticketproduct",
+								"insert-list"
+							],
+							"query": [
+								{
+									"key": "routeId",
+									"value": "1086",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sync",
+			"item": [
+				{
+					"name": "vinbusservices/integration/JWE/GetPublicKey Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=utf-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=utf-8"
+							},
+							{
+								"key": "TOKEN",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOiIzMDQwIiwiY29tcGFueWlkIjoiIiwidXNlcm5hbWUiOiJ1c2Vyc2FsZW1hbjEiLCJvd25lcmlkIjoiMCIsInJvbGUiOlsiRk5fTVBST0RVQ1RDQVRFR09SWSNBUElfREVMRVRFQllJRCIsIkZOX01QUk9EVUNUQ0FURUdPUlkjQVBJX0dFVEFMTCIsIkZOX01QUk9EVUNUQ0FURUdPUlkjQVBJX0dFVEJZSUQiLCJGTl9NUFJPRFVDVENBVEVHT1JZI0FQSV9JTlNFUlQiLCJGTl9NUFJPRFVDVENBVEVHT1JZI0FQSV9TRUFSQ0giLCJGTl9NUFJPRFVDVENBVEVHT1JZI0FQSV9VUERBVEUiLCJGTl9QT1NfQUNDT1VOVCNBUElfR0VUSU5GTyIsIkZOX1BPU19CTEFDS0xJU1RDQVJEI0FQSV9HRVRBTEwiLCJGTl9QT1NfQkxBQ0tMSVNUQ0FSRCNBUElfR0VUQllJRCIsIkZOX1BPU19CVVNJTkVTU1NFVFRJTkcjQVBJX0dFVE9CSkVDVFRZUEUiLCJGTl9QT1NfQlVTSU5FU1NTRVRUSU5HI0FQSV9HRVRQT1NQQVNTQ09ERSIsIkZOX1BPU19CVVNJTkVTU1NFVFRJTkcjQVBJX0dFVFFSVElNRU9VVCIsIkZOX1BPU19ISVNVU0VETU9OVEhDQVJEI0FQSV9JTlNFUlQiLCJGTl9QT1NfS0VZX01BTkFHRU1FTlQjQVBJX0RFTEVURSIsIkZOX1BPU19LRVlfTUFOQUdFTUVOVCNBUElfR0VUQUxMIiwiRk5fUE9TX0tFWV9NQU5BR0VNRU5UI0FQSV9HRVRCWUlEIiwiRk5fUE9TX0tFWV9NQU5BR0VNRU5UI0FQSV9JTlNFUlQiLCJGTl9QT1NfS0VZX01BTkFHRU1FTlQjQVBJX1VQREFURSIsIkZOX1BPU19NQlVTU1RPUCNBUElfR0VUQUxMIiwiRk5fUE9TX01CVVNTVE9QI0FQSV9HRVRCWUlEIiwiRk5fUE9TX01PTlRIQ0FSRCNBUElfR0VUV0hJVEVMSVNUIiwiRk5fUE9TX01QT1NNQUNISU5FI0FQSV9ERUxFVEVCWUlEIiwiRk5fUE9TX01QT1NNQUNISU5FI0FQSV9HRVRBTEwiLCJGTl9QT1NfTVBPU01BQ0hJTkUjQVBJX0dFVEJZSUQiLCJGTl9QT1NfTVBPU01BQ0hJTkUjQVBJX0dFVEJZSU1FSSIsIkZOX1BPU19NUE9TTUFDSElORSNBUElfSU5TRVJUIiwiRk5fUE9TX01QT1NNQUNISU5FI0FQSV9TRUFSQ0giLCJGTl9QT1NfTVBPU01BQ0hJTkUjQVBJX1VQREFURSIsIkZOX1BPU19NUk9VVEUjQVBJX0dFVEFMTCIsIkZOX1BPU19NUk9VVEUjQVBJX0dFVEJZSUQiLCJGTl9QT1NfUE9TQVBQVkVSU0lPTiNBUElfRE9XTE9BRCIsIkZOX1BPU19QT1NBUFBWRVJTSU9OI0FQSV9MQVNURURWRVJTSU9OIiwiRk5fUE9TX1BPU1NFTExFUiNBUElfSU5TRVJUIiwiRk5fUE9TX1NISUZUU0NIRURVTEVSI0FQSV9HRVRCWURBVEUiLCJGTl9QT1NfU1VNTUFSWVNDSEVEVUxFI0FQSV9TWU5DT1VUU0hJRlQiLCJGTl9QT1NfU1lOQ0RBVEFMT0cjQVBJX0lOU0VSVCIsIkZOX1BPU19URU1NT05USENBUkQjQVBJX0dFVEJZQ09ORElUSU9OIiwiRk5fUE9TX1RFTU1PTlRIQ0FSRCNBUElfVVBEQVRFIiwiRk5fUE9TX1RJQ0tFVE9SREVSI0FQSV9HRVRCWUlEIiwiRk5fUE9TX1RJQ0tFVE9SREVSI0FQSV9HRVRCWVJPVVRFSUQiLCJGTl9QT1NfVElDS0VUT1JERVIjQVBJX1NZTkNPVVRTSElGVCIsIkZOX1BPU19USUNLRVRQUk9EVUNUI0FQSV9HRVRCWUlEIiwiRk5fUE9TX1RJQ0tFVFBST0RVQ1QjQVBJX0dFVEJZUk9VVEVJRCIsIkZOX1BPU19USUNLRVRUUkFOU0FDVElPTiNBUElfR0VUQUxMIiwiRk5fUE9TX1RJQ0tFVFRSQU5TQUNUSU9OI0FQSV9HRVRCWUlEIiwiRk5fVEVNTU9OVEhDQVJEI0FQSV9ERUxFVEVCWUlEIiwiRk5fVEVNTU9OVEhDQVJEI0FQSV9HRVRBTEwiLCJGTl9URU1NT05USENBUkQjQVBJX0dFVEJZQ09ORElUSU9OIiwiRk5fVEVNTU9OVEhDQVJEI0FQSV9HRVRCWUlEIiwiRk5fVEVNTU9OVEhDQVJEI0FQSV9JTlNFUlQiLCJGTl9URU1NT05USENBUkQjQVBJX1NFQVJDSCIsIkZOX1RFTU1PTlRIQ0FSRCNBUElfVVBEQVRFIiwiRk5fVFJBQ0tJTkdfR1BTI0FQSV9ERUxFVEUiLCJGTl9UUkFDS0lOR19HUFMjQVBJX0dFVEFMTCIsIkZOX1RSQUNLSU5HX0dQUyNBUElfR0VUQllJRCIsIkZOX1RSQUNLSU5HX0dQUyNBUElfSU5TRVJUIiwiRk5fVFJBQ0tJTkdfR1BTI0FQSV9VUERBVEUiXSwiZ3JvdXBjb2RlIjoiMTAwOCIsImV4cCI6MTc0MzYyNDEwNiwiaWF0IjoxNzQzNjA0OTA2fQ.FRDobmtkBe3ISTbqpddQ6BN6dUOT7s99ZY6XFAgPaas"
+							},
+							{
+								"key": "SYSTEM_TYPE",
+								"value": "POS"
+							}
+						],
+						"url": {
+							"raw": "{{domainDev}}/api/v1/vinbusservices/integration/JWE/GetPublicKey",
+							"host": [
+								"{{domainDev}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"vinbusservices",
+								"integration",
+								"JWE",
+								"GetPublicKey"
+							]
+						},
+						"description": "Generated from cURL: curl -i \\\n\t-H \"Accept: application/json; charset=utf-8\" \\\n\t-H \"Content-Type: application/json; charset=utf-8\" \\\n\t-H \"TOKEN: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOiIzMDQwIiwiY29tcGFueWlkIjoiIiwidXNlcm5hbWUiOiJ1c2Vyc2FsZW1hbjEiLCJvd25lcmlkIjoiMCIsInJvbGUiOlsiRk5fTVBST0RVQ1RDQVRFR09SWSNBUElfREVMRVRFQllJRCIsIkZOX01QUk9EVUNUQ0FURUdPUlkjQVBJX0dFVEFMTCIsIkZOX01QUk9EVUNUQ0FURUdPUlkjQVBJX0dFVEJZSUQiLCJGTl9NUFJPRFVDVENBVEVHT1JZI0FQSV9JTlNFUlQiLCJGTl9NUFJPRFVDVENBVEVHT1JZI0FQSV9TRUFSQ0giLCJGTl9NUFJPRFVDVENBVEVHT1JZI0FQSV9VUERBVEUiLCJGTl9QT1NfQUNDT1VOVCNBUElfR0VUSU5GTyIsIkZOX1BPU19CTEFDS0xJU1RDQVJEI0FQSV9HRVRBTEwiLCJGTl9QT1NfQkxBQ0tMSVNUQ0FSRCNBUElfR0VUQllJRCIsIkZOX1BPU19CVVNJTkVTU1NFVFRJTkcjQVBJX0dFVE9CSkVDVFRZUEUiLCJGTl9QT1NfQlVTSU5FU1NTRVRUSU5HI0FQSV9HRVRQT1NQQVNTQ09ERSIsIkZOX1BPU19CVVNJTkVTU1NFVFRJTkcjQVBJX0dFVFFSVElNRU9VVCIsIkZOX1BPU19ISVNVU0VETU9OVEhDQVJEI0FQSV9JTlNFUlQiLCJGTl9QT1NfS0VZX01BTkFHRU1FTlQjQVBJX0RFTEVURSIsIkZOX1BPU19LRVlfTUFOQUdFTUVOVCNBUElfR0VUQUxMIiwiRk5fUE9TX0tFWV9NQU5BR0VNRU5UI0FQSV9HRVRCWUlEIiwiRk5fUE9TX0tFWV9NQU5BR0VNRU5UI0FQSV9JTlNFUlQiLCJGTl9QT1NfS0VZX01BTkFHRU1FTlQjQVBJX1VQREFURSIsIkZOX1BPU19NQlVTU1RPUCNBUElfR0VUQUxMIiwiRk5fUE9TX01CVVNTVE9QI0FQSV9HRVRCWUlEIiwiRk5fUE9TX01PTlRIQ0FSRCNBUElfR0VUV0hJVEVMSVNUIiwiRk5fUE9TX01QT1NNQUNISU5FI0FQSV9ERUxFVEVCWUlEIiwiRk5fUE9TX01QT1NNQUNISU5FI0FQSV9HRVRBTEwiLCJGTl9QT1NfTVBPU01BQ0hJTkUjQVBJX0dFVEJZSUQiLCJGTl9QT1NfTVBPU01BQ0hJTkUjQVBJX0dFVEJZSU1FSSIsIkZOX1BPU19NUE9TTUFDSElORSNBUElfSU5TRVJUIiwiRk5fUE9TX01QT1NNQUNISU5FI0FQSV9TRUFSQ0giLCJGTl9QT1NfTVBPU01BQ0hJTkUjQVBJX1VQREFURSIsIkZOX1BPU19NUk9VVEUjQVBJX0dFVEFMTCIsIkZOX1BPU19NUk9VVEUjQVBJX0dFVEJZSUQiLCJGTl9QT1NfUE9TQVBQVkVSU0lPTiNBUElfRE9XTE9BRCIsIkZOX1BPU19QT1NBUFBWRVJTSU9OI0FQSV9MQVNURURWRVJTSU9OIiwiRk5fUE9TX1BPU1NFTExFUiNBUElfSU5TRVJUIiwiRk5fUE9TX1NISUZUU0NIRURVTEVSI0FQSV9HRVRCWURBVEUiLCJGTl9QT1NfU1VNTUFSWVNDSEVEVUxFI0FQSV9TWU5DT1VUU0hJRlQiLCJGTl9QT1NfU1lOQ0RBVEFMT0cjQVBJX0lOU0VSVCIsIkZOX1BPU19URU1NT05USENBUkQjQVBJX0dFVEJZQ09ORElUSU9OIiwiRk5fUE9TX1RFTU1PTlRIQ0FSRCNBUElfVVBEQVRFIiwiRk5fUE9TX1RJQ0tFVE9SREVSI0FQSV9HRVRCWUlEIiwiRk5fUE9TX1RJQ0tFVE9SREVSI0FQSV9HRVRCWVJPVVRFSUQiLCJGTl9QT1NfVElDS0VUT1JERVIjQVBJX1NZTkNPVVRTSElGVCIsIkZOX1BPU19USUNLRVRQUk9EVUNUI0FQSV9HRVRCWUlEIiwiRk5fUE9TX1RJQ0tFVFBST0RVQ1QjQVBJX0dFVEJZUk9VVEVJRCIsIkZOX1BPU19USUNLRVRUUkFOU0FDVElPTiNBUElfR0VUQUxMIiwiRk5fUE9TX1RJQ0tFVFRSQU5TQUNUSU9OI0FQSV9HRVRCWUlEIiwiRk5fVEVNTU9OVEhDQVJEI0FQSV9ERUxFVEVCWUlEIiwiRk5fVEVNTU9OVEhDQVJEI0FQSV9HRVRBTEwiLCJGTl9URU1NT05USENBUkQjQVBJX0dFVEJZQ09ORElUSU9OIiwiRk5fVEVNTU9OVEhDQVJEI0FQSV9HRVRCWUlEIiwiRk5fVEVNTU9OVEhDQVJEI0FQSV9JTlNFUlQiLCJGTl9URU1NT05USENBUkQjQVBJX1NFQVJDSCIsIkZOX1RFTU1PTlRIQ0FSRCNBUElfVVBEQVRFIiwiRk5fVFJBQ0tJTkdfR1BTI0FQSV9ERUxFVEUiLCJGTl9UUkFDS0lOR19HUFMjQVBJX0dFVEFMTCIsIkZOX1RSQUNLSU5HX0dQUyNBUElfR0VUQllJRCIsIkZOX1RSQUNLSU5HX0dQUyNBUElfSU5TRVJUIiwiRk5fVFJBQ0tJTkdfR1BTI0FQSV9VUERBVEUiXSwiZ3JvdXBjb2RlIjoiMTAwOCIsImV4cCI6MTc0MzYyNDEwNiwiaWF0IjoxNzQzNjA0OTA2fQ.FRDobmtkBe3ISTbqpddQ6BN6dUOT7s99ZY6XFAgPaas\" \\\n\t-H \"SYSTEM_TYPE: POS\" \\\n\t\"https://integrate-vinbus.unit.vn/api/v1/vinbusservices/integration/JWE/GetPublicKey\""
+					},
+					"response": []
+				},
+				{
+					"name": "vinbusservices/integration/GetBankBinInfor Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=utf-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=utf-8"
+							},
+							{
+								"key": "TOKEN",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOiIzMDQwIiwiY29tcGFueWlkIjoiIiwidXNlcm5hbWUiOiJ1c2Vyc2FsZW1hbjEiLCJvd25lcmlkIjoiMCIsInJvbGUiOlsiRk5fTVBST0RVQ1RDQVRFR09SWSNBUElfREVMRVRFQllJRCIsIkZOX01QUk9EVUNUQ0FURUdPUlkjQVBJX0dFVEFMTCIsIkZOX01QUk9EVUNUQ0FURUdPUlkjQVBJX0dFVEJZSUQiLCJGTl9NUFJPRFVDVENBVEVHT1JZI0FQSV9JTlNFUlQiLCJGTl9NUFJPRFVDVENBVEVHT1JZI0FQSV9TRUFSQ0giLCJGTl9NUFJPRFVDVENBVEVHT1JZI0FQSV9VUERBVEUiLCJGTl9QT1NfQUNDT1VOVCNBUElfR0VUSU5GTyIsIkZOX1BPU19CTEFDS0xJU1RDQVJEI0FQSV9HRVRBTEwiLCJGTl9QT1NfQkxBQ0tMSVNUQ0FSRCNBUElfR0VUQllJRCIsIkZOX1BPU19CVVNJTkVTU1NFVFRJTkcjQVBJX0dFVE9CSkVDVFRZUEUiLCJGTl9QT1NfQlVTSU5FU1NTRVRUSU5HI0FQSV9HRVRQT1NQQVNTQ09ERSIsIkZOX1BPU19CVVNJTkVTU1NFVFRJTkcjQVBJX0dFVFFSVElNRU9VVCIsIkZOX1BPU19ISVNVU0VETU9OVEhDQVJEI0FQSV9JTlNFUlQiLCJGTl9QT1NfS0VZX01BTkFHRU1FTlQjQVBJX0RFTEVURSIsIkZOX1BPU19LRVlfTUFOQUdFTUVOVCNBUElfR0VUQUxMIiwiRk5fUE9TX0tFWV9NQU5BR0VNRU5UI0FQSV9HRVRCWUlEIiwiRk5fUE9TX0tFWV9NQU5BR0VNRU5UI0FQSV9JTlNFUlQiLCJGTl9QT1NfS0VZX01BTkFHRU1FTlQjQVBJX1VQREFURSIsIkZOX1BPU19NQlVTU1RPUCNBUElfR0VUQUxMIiwiRk5fUE9TX01CVVNTVE9QI0FQSV9HRVRCWUlEIiwiRk5fUE9TX01PTlRIQ0FSRCNBUElfR0VUV0hJVEVMSVNUIiwiRk5fUE9TX01QT1NNQUNISU5FI0FQSV9ERUxFVEVCWUlEIiwiRk5fUE9TX01QT1NNQUNISU5FI0FQSV9HRVRBTEwiLCJGTl9QT1NfTVBPU01BQ0hJTkUjQVBJX0dFVEJZSUQiLCJGTl9QT1NfTVBPU01BQ0hJTkUjQVBJX0dFVEJZSU1FSSIsIkZOX1BPU19NUE9TTUFDSElORSNBUElfSU5TRVJUIiwiRk5fUE9TX01QT1NNQUNISU5FI0FQSV9TRUFSQ0giLCJGTl9QT1NfTVBPU01BQ0hJTkUjQVBJX1VQREFURSIsIkZOX1BPU19NUk9VVEUjQVBJX0dFVEFMTCIsIkZOX1BPU19NUk9VVEUjQVBJX0dFVEJZSUQiLCJGTl9QT1NfUE9TQVBQVkVSU0lPTiNBUElfRE9XTE9BRCIsIkZOX1BPU19QT1NBUFBWRVJTSU9OI0FQSV9MQVNURURWRVJTSU9OIiwiRk5fUE9TX1BPU1NFTExFUiNBUElfSU5TRVJUIiwiRk5fUE9TX1NISUZUU0NIRURVTEVSI0FQSV9HRVRCWURBVEUiLCJGTl9QT1NfU1VNTUFSWVNDSEVEVUxFI0FQSV9TWU5DT1VUU0hJRlQiLCJGTl9QT1NfU1lOQ0RBVEFMT0cjQVBJX0lOU0VSVCIsIkZOX1BPU19URU1NT05USENBUkQjQVBJX0dFVEJZQ09ORElUSU9OIiwiRk5fUE9TX1RFTU1PTlRIQ0FSRCNBUElfVVBEQVRFIiwiRk5fUE9TX1RJQ0tFVE9SREVSI0FQSV9HRVRCWUlEIiwiRk5fUE9TX1RJQ0tFVE9SREVSI0FQSV9HRVRCWVJPVVRFSUQiLCJGTl9QT1NfVElDS0VUT1JERVIjQVBJX1NZTkNPVVRTSElGVCIsIkZOX1BPU19USUNLRVRQUk9EVUNUI0FQSV9HRVRCWUlEIiwiRk5fUE9TX1RJQ0tFVFBST0RVQ1QjQVBJX0dFVEJZUk9VVEVJRCIsIkZOX1BPU19USUNLRVRUUkFOU0FDVElPTiNBUElfR0VUQUxMIiwiRk5fUE9TX1RJQ0tFVFRSQU5TQUNUSU9OI0FQSV9HRVRCWUlEIiwiRk5fVEVNTU9OVEhDQVJEI0FQSV9ERUxFVEVCWUlEIiwiRk5fVEVNTU9OVEhDQVJEI0FQSV9HRVRBTEwiLCJGTl9URU1NT05USENBUkQjQVBJX0dFVEJZQ09ORElUSU9OIiwiRk5fVEVNTU9OVEhDQVJEI0FQSV9HRVRCWUlEIiwiRk5fVEVNTU9OVEhDQVJEI0FQSV9JTlNFUlQiLCJGTl9URU1NT05USENBUkQjQVBJX1NFQVJDSCIsIkZOX1RFTU1PTlRIQ0FSRCNBUElfVVBEQVRFIiwiRk5fVFJBQ0tJTkdfR1BTI0FQSV9ERUxFVEUiLCJGTl9UUkFDS0lOR19HUFMjQVBJX0dFVEFMTCIsIkZOX1RSQUNLSU5HX0dQUyNBUElfR0VUQllJRCIsIkZOX1RSQUNLSU5HX0dQUyNBUElfSU5TRVJUIiwiRk5fVFJBQ0tJTkdfR1BTI0FQSV9VUERBVEUiXSwiZ3JvdXBjb2RlIjoiMTAwOCIsImV4cCI6MTc0MzYyNDEwNiwiaWF0IjoxNzQzNjA0OTA2fQ.FRDobmtkBe3ISTbqpddQ6BN6dUOT7s99ZY6XFAgPaas"
+							},
+							{
+								"key": "SYSTEM_TYPE",
+								"value": "POS"
+							}
+						],
+						"url": {
+							"raw": "{{domainDev}}/api/v1/vinbusservices/integration/GetBankBinInfor",
+							"host": [
+								"{{domainDev}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"vinbusservices",
+								"integration",
+								"GetBankBinInfor"
+							]
+						},
+						"description": "Generated from cURL: curl -i \\\n\t-H \"Accept: application/json; charset=utf-8\" \\\n\t-H \"Content-Type: application/json; charset=utf-8\" \\\n\t-H \"TOKEN: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOiIzMDQwIiwiY29tcGFueWlkIjoiIiwidXNlcm5hbWUiOiJ1c2Vyc2FsZW1hbjEiLCJvd25lcmlkIjoiMCIsInJvbGUiOlsiRk5fTVBST0RVQ1RDQVRFR09SWSNBUElfREVMRVRFQllJRCIsIkZOX01QUk9EVUNUQ0FURUdPUlkjQVBJX0dFVEFMTCIsIkZOX01QUk9EVUNUQ0FURUdPUlkjQVBJX0dFVEJZSUQiLCJGTl9NUFJPRFVDVENBVEVHT1JZI0FQSV9JTlNFUlQiLCJGTl9NUFJPRFVDVENBVEVHT1JZI0FQSV9TRUFSQ0giLCJGTl9NUFJPRFVDVENBVEVHT1JZI0FQSV9VUERBVEUiLCJGTl9QT1NfQUNDT1VOVCNBUElfR0VUSU5GTyIsIkZOX1BPU19CTEFDS0xJU1RDQVJEI0FQSV9HRVRBTEwiLCJGTl9QT1NfQkxBQ0tMSVNUQ0FSRCNBUElfR0VUQllJRCIsIkZOX1BPU19CVVNJTkVTU1NFVFRJTkcjQVBJX0dFVE9CSkVDVFRZUEUiLCJGTl9QT1NfQlVTSU5FU1NTRVRUSU5HI0FQSV9HRVRQT1NQQVNTQ09ERSIsIkZOX1BPU19CVVNJTkVTU1NFVFRJTkcjQVBJX0dFVFFSVElNRU9VVCIsIkZOX1BPU19ISVNVU0VETU9OVEhDQVJEI0FQSV9JTlNFUlQiLCJGTl9QT1NfS0VZX01BTkFHRU1FTlQjQVBJX0RFTEVURSIsIkZOX1BPU19LRVlfTUFOQUdFTUVOVCNBUElfR0VUQUxMIiwiRk5fUE9TX0tFWV9NQU5BR0VNRU5UI0FQSV9HRVRCWUlEIiwiRk5fUE9TX0tFWV9NQU5BR0VNRU5UI0FQSV9JTlNFUlQiLCJGTl9QT1NfS0VZX01BTkFHRU1FTlQjQVBJX1VQREFURSIsIkZOX1BPU19NQlVTU1RPUCNBUElfR0VUQUxMIiwiRk5fUE9TX01CVVNTVE9QI0FQSV9HRVRCWUlEIiwiRk5fUE9TX01PTlRIQ0FSRCNBUElfR0VUV0hJVEVMSVNUIiwiRk5fUE9TX01QT1NNQUNISU5FI0FQSV9ERUxFVEVCWUlEIiwiRk5fUE9TX01QT1NNQUNISU5FI0FQSV9HRVRBTEwiLCJGTl9QT1NfTVBPU01BQ0hJTkUjQVBJX0dFVEJZSUQiLCJGTl9QT1NfTVBPU01BQ0hJTkUjQVBJX0dFVEJZSU1FSSIsIkZOX1BPU19NUE9TTUFDSElORSNBUElfSU5TRVJUIiwiRk5fUE9TX01QT1NNQUNISU5FI0FQSV9TRUFSQ0giLCJGTl9QT1NfTVBPU01BQ0hJTkUjQVBJX1VQREFURSIsIkZOX1BPU19NUk9VVEUjQVBJX0dFVEFMTCIsIkZOX1BPU19NUk9VVEUjQVBJX0dFVEJZSUQiLCJGTl9QT1NfUE9TQVBQVkVSU0lPTiNBUElfRE9XTE9BRCIsIkZOX1BPU19QT1NBUFBWRVJTSU9OI0FQSV9MQVNURURWRVJTSU9OIiwiRk5fUE9TX1BPU1NFTExFUiNBUElfSU5TRVJUIiwiRk5fUE9TX1NISUZUU0NIRURVTEVSI0FQSV9HRVRCWURBVEUiLCJGTl9QT1NfU1VNTUFSWVNDSEVEVUxFI0FQSV9TWU5DT1VUU0hJRlQiLCJGTl9QT1NfU1lOQ0RBVEFMT0cjQVBJX0lOU0VSVCIsIkZOX1BPU19URU1NT05USENBUkQjQVBJX0dFVEJZQ09ORElUSU9OIiwiRk5fUE9TX1RFTU1PTlRIQ0FSRCNBUElfVVBEQVRFIiwiRk5fUE9TX1RJQ0tFVE9SREVSI0FQSV9HRVRCWUlEIiwiRk5fUE9TX1RJQ0tFVE9SREVSI0FQSV9HRVRCWVJPVVRFSUQiLCJGTl9QT1NfVElDS0VUT1JERVIjQVBJX1NZTkNPVVRTSElGVCIsIkZOX1BPU19USUNLRVRQUk9EVUNUI0FQSV9HRVRCWUlEIiwiRk5fUE9TX1RJQ0tFVFBST0RVQ1QjQVBJX0dFVEJZUk9VVEVJRCIsIkZOX1BPU19USUNLRVRUUkFOU0FDVElPTiNBUElfR0VUQUxMIiwiRk5fUE9TX1RJQ0tFVFRSQU5TQUNUSU9OI0FQSV9HRVRCWUlEIiwiRk5fVEVNTU9OVEhDQVJEI0FQSV9ERUxFVEVCWUlEIiwiRk5fVEVNTU9OVEhDQVJEI0FQSV9HRVRBTEwiLCJGTl9URU1NT05USENBUkQjQVBJX0dFVEJZQ09ORElUSU9OIiwiRk5fVEVNTU9OVEhDQVJEI0FQSV9HRVRCWUlEIiwiRk5fVEVNTU9OVEhDQVJEI0FQSV9JTlNFUlQiLCJGTl9URU1NT05USENBUkQjQVBJX1NFQVJDSCIsIkZOX1RFTU1PTlRIQ0FSRCNBUElfVVBEQVRFIiwiRk5fVFJBQ0tJTkdfR1BTI0FQSV9ERUxFVEUiLCJGTl9UUkFDS0lOR19HUFMjQVBJX0dFVEFMTCIsIkZOX1RSQUNLSU5HX0dQUyNBUElfR0VUQllJRCIsIkZOX1RSQUNLSU5HX0dQUyNBUElfSU5TRVJUIiwiRk5fVFJBQ0tJTkdfR1BTI0FQSV9VUERBVEUiXSwiZ3JvdXBjb2RlIjoiMTAwOCIsImV4cCI6MTc0MzYyNDEwNiwiaWF0IjoxNzQzNjA0OTA2fQ.FRDobmtkBe3ISTbqpddQ6BN6dUOT7s99ZY6XFAgPaas\" \\\n\t-H \"SYSTEM_TYPE: POS\" \\\n\t\"https://integrate-vinbus.unit.vn/api/v1/vinbusservices/integration/GetBankBinInfor\""
+					},
+					"response": []
+				},
+				{
+					"name": "vinbusservices/integration/CreateBankBinInfor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=utf-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=utf-8"
+							},
+							{
+								"key": "TOKEN",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOiIzMDQwIiwiY29tcGFueWlkIjoiIiwidXNlcm5hbWUiOiJ1c2Vyc2FsZW1hbjEiLCJvd25lcmlkIjoiMCIsInJvbGUiOlsiRk5fTVBST0RVQ1RDQVRFR09SWSNBUElfREVMRVRFQllJRCIsIkZOX01QUk9EVUNUQ0FURUdPUlkjQVBJX0dFVEFMTCIsIkZOX01QUk9EVUNUQ0FURUdPUlkjQVBJX0dFVEJZSUQiLCJGTl9NUFJPRFVDVENBVEVHT1JZI0FQSV9JTlNFUlQiLCJGTl9NUFJPRFVDVENBVEVHT1JZI0FQSV9TRUFSQ0giLCJGTl9NUFJPRFVDVENBVEVHT1JZI0FQSV9VUERBVEUiLCJGTl9QT1NfQUNDT1VOVCNBUElfR0VUSU5GTyIsIkZOX1BPU19CTEFDS0xJU1RDQVJEI0FQSV9HRVRBTEwiLCJGTl9QT1NfQkxBQ0tMSVNUQ0FSRCNBUElfR0VUQllJRCIsIkZOX1BPU19CVVNJTkVTU1NFVFRJTkcjQVBJX0dFVE9CSkVDVFRZUEUiLCJGTl9QT1NfQlVTSU5FU1NTRVRUSU5HI0FQSV9HRVRQT1NQQVNTQ09ERSIsIkZOX1BPU19CVVNJTkVTU1NFVFRJTkcjQVBJX0dFVFFSVElNRU9VVCIsIkZOX1BPU19ISVNVU0VETU9OVEhDQVJEI0FQSV9JTlNFUlQiLCJGTl9QT1NfS0VZX01BTkFHRU1FTlQjQVBJX0RFTEVURSIsIkZOX1BPU19LRVlfTUFOQUdFTUVOVCNBUElfR0VUQUxMIiwiRk5fUE9TX0tFWV9NQU5BR0VNRU5UI0FQSV9HRVRCWUlEIiwiRk5fUE9TX0tFWV9NQU5BR0VNRU5UI0FQSV9JTlNFUlQiLCJGTl9QT1NfS0VZX01BTkFHRU1FTlQjQVBJX1VQREFURSIsIkZOX1BPU19NQlVTU1RPUCNBUElfR0VUQUxMIiwiRk5fUE9TX01CVVNTVE9QI0FQSV9HRVRCWUlEIiwiRk5fUE9TX01PTlRIQ0FSRCNBUElfR0VUV0hJVEVMSVNUIiwiRk5fUE9TX01QT1NNQUNISU5FI0FQSV9ERUxFVEVCWUlEIiwiRk5fUE9TX01QT1NNQUNISU5FI0FQSV9HRVRBTEwiLCJGTl9QT1NfTVBPU01BQ0hJTkUjQVBJX0dFVEJZSUQiLCJGTl9QT1NfTVBPU01BQ0hJTkUjQVBJX0dFVEJZSU1FSSIsIkZOX1BPU19NUE9TTUFDSElORSNBUElfSU5TRVJUIiwiRk5fUE9TX01QT1NNQUNISU5FI0FQSV9TRUFSQ0giLCJGTl9QT1NfTVBPU01BQ0hJTkUjQVBJX1VQREFURSIsIkZOX1BPU19NUk9VVEUjQVBJX0dFVEFMTCIsIkZOX1BPU19NUk9VVEUjQVBJX0dFVEJZSUQiLCJGTl9QT1NfUE9TQVBQVkVSU0lPTiNBUElfRE9XTE9BRCIsIkZOX1BPU19QT1NBUFBWRVJTSU9OI0FQSV9MQVNURURWRVJTSU9OIiwiRk5fUE9TX1BPU1NFTExFUiNBUElfSU5TRVJUIiwiRk5fUE9TX1NISUZUU0NIRURVTEVSI0FQSV9HRVRCWURBVEUiLCJGTl9QT1NfU1VNTUFSWVNDSEVEVUxFI0FQSV9TWU5DT1VUU0hJRlQiLCJGTl9QT1NfU1lOQ0RBVEFMT0cjQVBJX0lOU0VSVCIsIkZOX1BPU19URU1NT05USENBUkQjQVBJX0dFVEJZQ09ORElUSU9OIiwiRk5fUE9TX1RFTU1PTlRIQ0FSRCNBUElfVVBEQVRFIiwiRk5fUE9TX1RJQ0tFVE9SREVSI0FQSV9HRVRCWUlEIiwiRk5fUE9TX1RJQ0tFVE9SREVSI0FQSV9HRVRCWVJPVVRFSUQiLCJGTl9QT1NfVElDS0VUT1JERVIjQVBJX1NZTkNPVVRTSElGVCIsIkZOX1BPU19USUNLRVRQUk9EVUNUI0FQSV9HRVRCWUlEIiwiRk5fUE9TX1RJQ0tFVFBST0RVQ1QjQVBJX0dFVEJZUk9VVEVJRCIsIkZOX1BPU19USUNLRVRUUkFOU0FDVElPTiNBUElfR0VUQUxMIiwiRk5fUE9TX1RJQ0tFVFRSQU5TQUNUSU9OI0FQSV9HRVRCWUlEIiwiRk5fVEVNTU9OVEhDQVJEI0FQSV9ERUxFVEVCWUlEIiwiRk5fVEVNTU9OVEhDQVJEI0FQSV9HRVRBTEwiLCJGTl9URU1NT05USENBUkQjQVBJX0dFVEJZQ09ORElUSU9OIiwiRk5fVEVNTU9OVEhDQVJEI0FQSV9HRVRCWUlEIiwiRk5fVEVNTU9OVEhDQVJEI0FQSV9JTlNFUlQiLCJGTl9URU1NT05USENBUkQjQVBJX1NFQVJDSCIsIkZOX1RFTU1PTlRIQ0FSRCNBUElfVVBEQVRFIiwiRk5fVFJBQ0tJTkdfR1BTI0FQSV9ERUxFVEUiLCJGTl9UUkFDS0lOR19HUFMjQVBJX0dFVEFMTCIsIkZOX1RSQUNLSU5HX0dQUyNBUElfR0VUQllJRCIsIkZOX1RSQUNLSU5HX0dQUyNBUElfSU5TRVJUIiwiRk5fVFJBQ0tJTkdfR1BTI0FQSV9VUERBVEUiXSwiZ3JvdXBjb2RlIjoiMTAwOCIsImV4cCI6MTc0MzYyNDEwNiwiaWF0IjoxNzQzNjA0OTA2fQ.FRDobmtkBe3ISTbqpddQ6BN6dUOT7s99ZY6XFAgPaas"
+							},
+							{
+								"key": "SYSTEM_TYPE",
+								"value": "POS"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"code\": \"VCBCVNVN\",\n        \"ben_id\": \"970454\",\n        \"bank_bin\": \"970454\",\n        \"short_name\": \"Vietcapital Bank\"\n    },\n    {\n        \"code\": \"BFTVVNVN\",\n        \"ben_id\": \"970436\",\n        \"bank_bin\": \"970436\",\n        \"short_name\": \"Vietcombank\"\n    },\n    {\n        \"code\": \"TPBVVNVN\",\n        \"ben_id\": \"970423\",\n        \"bank_bin\": \"970423\",\n        \"short_name\": \"TPBank\"\n    },\n    {\n        \"code\": \"BIDVVNVN\",\n        \"ben_id\": \"970418\",\n        \"bank_bin\": \"970418,970411\",\n        \"short_name\": \"BIDV\"\n    },\n    {\n        \"code\": \"BVBVVNVN\",\n        \"ben_id\": \"970438\",\n        \"bank_bin\": \"970438\",\n        \"short_name\": \"Bảo Việt Bank\"\n    },\n    {\n        \"code\": \"HDBCVNVN\",\n        \"ben_id\": \"970437\",\n        \"bank_bin\": \"970437\",\n        \"short_name\": \"HDBank\"\n    },\n    {\n        \"code\": \"970443\",\n        \"ben_id\": \"970443\",\n        \"bank_bin\": \"970443\",\n        \"short_name\": \"SHB\"\n    },\n    {\n        \"code\": \"970433\",\n        \"ben_id\": \"970433\",\n        \"bank_bin\": \"970433\",\n        \"short_name\": \"VIetbank\"\n    },\n    {\n        \"code\": \"970440\",\n        \"ben_id\": \"970440\",\n        \"bank_bin\": \"970440\",\n        \"short_name\": \"SeABank\"\n    },\n    {\n        \"code\": \"970422\",\n        \"ben_id\": \"970422\",\n        \"bank_bin\": \"970422\",\n        \"short_name\": \"MBBank\"\n    },\n    {\n        \"code\": \"970405\",\n        \"ben_id\": \"970405\",\n        \"bank_bin\": \"970405\",\n        \"short_name\": \"Agribank\"\n    },\n    {\n        \"code\": \"970457\",\n        \"ben_id\": \"970457\",\n        \"bank_bin\": \"970457\",\n        \"short_name\": \"Worri Bank\"\n    },\n    {\n        \"code\": \"NAMAVNVX\",\n        \"ben_id\": \"970428\",\n        \"bank_bin\": \"970428\",\n        \"short_name\": \"Nam Á Bank\"\n    },\n    {\n        \"code\": \"970407\",\n        \"ben_id\": \"970407\",\n        \"bank_bin\": \"970407\",\n        \"short_name\": \"TCB\"\n    },\n    {\n        \"code\": \"970441\",\n        \"ben_id\": \"970441\",\n        \"bank_bin\": \"180906,970441\",\n        \"short_name\": \"VIB\"\n    },\n    {\n        \"code\": \"970419\",\n        \"ben_id\": \"970419\",\n        \"bank_bin\": \"970419\",\n        \"short_name\": \"NCB\"\n    },\n    {\n        \"code\": \"970438\",\n        \"ben_id\": \"970438\",\n        \"bank_bin\": \"970438\",\n        \"short_name\": \"BVB\"\n    },\n    {\n        \"code\": \"970415\",\n        \"ben_id\": \"970415\",\n        \"bank_bin\": \"970415\",\n        \"short_name\": \"viettin\"\n    },\n    {\n        \"code\": \"970400\",\n        \"ben_id\": \"970400\",\n        \"bank_bin\": \"970400\",\n        \"short_name\": \"SGB\"\n    },\n    {\n        \"code\": \"970439\",\n        \"ben_id\": \"970439\",\n        \"bank_bin\": \"970439\",\n        \"short_name\": \"PBVN\"\n    },\n    {\n        \"code\": \"970427\",\n        \"ben_id\": \"970427\",\n        \"bank_bin\": \"970427\",\n        \"short_name\": \"VAB\"\n    },\n    {\n        \"code\": \"970452\",\n        \"ben_id\": \"970452\",\n        \"bank_bin\": \"970452\",\n        \"short_name\": \"KLB\"\n    },\n    {\n        \"code\": \"970448 \",\n        \"ben_id\": \"970448\",\n        \"bank_bin\": \"970448\",\n        \"short_name\": \"OCB\"\n    },\n    {\n        \"code\": \"970431\",\n        \"ben_id\": \"970431\",\n        \"bank_bin\": \"970431\",\n        \"short_name\": \"Eximbank\"\n    },\n    {\n        \"code\": \"970409\",\n        \"ben_id\": \"970409\",\n        \"bank_bin\": \"970409\",\n        \"short_name\": \"BacA\"\n    },\n    {\n        \"code\": \"970416 \",\n        \"ben_id\": \"970416 \",\n        \"bank_bin\": \"970416 \",\n        \"short_name\": \"ACB\"\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domainDev}}/api/v1/vinbusservices/integration/CreateBankBinInfor",
+							"host": [
+								"{{domainDev}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"vinbusservices",
+								"integration",
+								"CreateBankBinInfor"
+							]
+						},
+						"description": "Generated from cURL: curl -i \\\n\t-H \"Accept: application/json; charset=utf-8\" \\\n\t-H \"Content-Type: application/json; charset=utf-8\" \\\n\t-H \"TOKEN: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOiIzMDQwIiwiY29tcGFueWlkIjoiIiwidXNlcm5hbWUiOiJ1c2Vyc2FsZW1hbjEiLCJvd25lcmlkIjoiMCIsInJvbGUiOlsiRk5fTVBST0RVQ1RDQVRFR09SWSNBUElfREVMRVRFQllJRCIsIkZOX01QUk9EVUNUQ0FURUdPUlkjQVBJX0dFVEFMTCIsIkZOX01QUk9EVUNUQ0FURUdPUlkjQVBJX0dFVEJZSUQiLCJGTl9NUFJPRFVDVENBVEVHT1JZI0FQSV9JTlNFUlQiLCJGTl9NUFJPRFVDVENBVEVHT1JZI0FQSV9TRUFSQ0giLCJGTl9NUFJPRFVDVENBVEVHT1JZI0FQSV9VUERBVEUiLCJGTl9QT1NfQUNDT1VOVCNBUElfR0VUSU5GTyIsIkZOX1BPU19CTEFDS0xJU1RDQVJEI0FQSV9HRVRBTEwiLCJGTl9QT1NfQkxBQ0tMSVNUQ0FSRCNBUElfR0VUQllJRCIsIkZOX1BPU19CVVNJTkVTU1NFVFRJTkcjQVBJX0dFVE9CSkVDVFRZUEUiLCJGTl9QT1NfQlVTSU5FU1NTRVRUSU5HI0FQSV9HRVRQT1NQQVNTQ09ERSIsIkZOX1BPU19CVVNJTkVTU1NFVFRJTkcjQVBJX0dFVFFSVElNRU9VVCIsIkZOX1BPU19ISVNVU0VETU9OVEhDQVJEI0FQSV9JTlNFUlQiLCJGTl9QT1NfS0VZX01BTkFHRU1FTlQjQVBJX0RFTEVURSIsIkZOX1BPU19LRVlfTUFOQUdFTUVOVCNBUElfR0VUQUxMIiwiRk5fUE9TX0tFWV9NQU5BR0VNRU5UI0FQSV9HRVRCWUlEIiwiRk5fUE9TX0tFWV9NQU5BR0VNRU5UI0FQSV9JTlNFUlQiLCJGTl9QT1NfS0VZX01BTkFHRU1FTlQjQVBJX1VQREFURSIsIkZOX1BPU19NQlVTU1RPUCNBUElfR0VUQUxMIiwiRk5fUE9TX01CVVNTVE9QI0FQSV9HRVRCWUlEIiwiRk5fUE9TX01PTlRIQ0FSRCNBUElfR0VUV0hJVEVMSVNUIiwiRk5fUE9TX01QT1NNQUNISU5FI0FQSV9ERUxFVEVCWUlEIiwiRk5fUE9TX01QT1NNQUNISU5FI0FQSV9HRVRBTEwiLCJGTl9QT1NfTVBPU01BQ0hJTkUjQVBJX0dFVEJZSUQiLCJGTl9QT1NfTVBPU01BQ0hJTkUjQVBJX0dFVEJZSU1FSSIsIkZOX1BPU19NUE9TTUFDSElORSNBUElfSU5TRVJUIiwiRk5fUE9TX01QT1NNQUNISU5FI0FQSV9TRUFSQ0giLCJGTl9QT1NfTVBPU01BQ0hJTkUjQVBJX1VQREFURSIsIkZOX1BPU19NUk9VVEUjQVBJX0dFVEFMTCIsIkZOX1BPU19NUk9VVEUjQVBJX0dFVEJZSUQiLCJGTl9QT1NfUE9TQVBQVkVSU0lPTiNBUElfRE9XTE9BRCIsIkZOX1BPU19QT1NBUFBWRVJTSU9OI0FQSV9MQVNURURWRVJTSU9OIiwiRk5fUE9TX1BPU1NFTExFUiNBUElfSU5TRVJUIiwiRk5fUE9TX1NISUZUU0NIRURVTEVSI0FQSV9HRVRCWURBVEUiLCJGTl9QT1NfU1VNTUFSWVNDSEVEVUxFI0FQSV9TWU5DT1VUU0hJRlQiLCJGTl9QT1NfU1lOQ0RBVEFMT0cjQVBJX0lOU0VSVCIsIkZOX1BPU19URU1NT05USENBUkQjQVBJX0dFVEJZQ09ORElUSU9OIiwiRk5fUE9TX1RFTU1PTlRIQ0FSRCNBUElfVVBEQVRFIiwiRk5fUE9TX1RJQ0tFVE9SREVSI0FQSV9HRVRCWUlEIiwiRk5fUE9TX1RJQ0tFVE9SREVSI0FQSV9HRVRCWVJPVVRFSUQiLCJGTl9QT1NfVElDS0VUT1JERVIjQVBJX1NZTkNPVVRTSElGVCIsIkZOX1BPU19USUNLRVRQUk9EVUNUI0FQSV9HRVRCWUlEIiwiRk5fUE9TX1RJQ0tFVFBST0RVQ1QjQVBJX0dFVEJZUk9VVEVJRCIsIkZOX1BPU19USUNLRVRUUkFOU0FDVElPTiNBUElfR0VUQUxMIiwiRk5fUE9TX1RJQ0tFVFRSQU5TQUNUSU9OI0FQSV9HRVRCWUlEIiwiRk5fVEVNTU9OVEhDQVJEI0FQSV9ERUxFVEVCWUlEIiwiRk5fVEVNTU9OVEhDQVJEI0FQSV9HRVRBTEwiLCJGTl9URU1NT05USENBUkQjQVBJX0dFVEJZQ09ORElUSU9OIiwiRk5fVEVNTU9OVEhDQVJEI0FQSV9HRVRCWUlEIiwiRk5fVEVNTU9OVEhDQVJEI0FQSV9JTlNFUlQiLCJGTl9URU1NT05USENBUkQjQVBJX1NFQVJDSCIsIkZOX1RFTU1PTlRIQ0FSRCNBUElfVVBEQVRFIiwiRk5fVFJBQ0tJTkdfR1BTI0FQSV9ERUxFVEUiLCJGTl9UUkFDS0lOR19HUFMjQVBJX0dFVEFMTCIsIkZOX1RSQUNLSU5HX0dQUyNBUElfR0VUQllJRCIsIkZOX1RSQUNLSU5HX0dQUyNBUElfSU5TRVJUIiwiRk5fVFJBQ0tJTkdfR1BTI0FQSV9VUERBVEUiXSwiZ3JvdXBjb2RlIjoiMTAwOCIsImV4cCI6MTc0MzYyNDEwNiwiaWF0IjoxNzQzNjA0OTA2fQ.FRDobmtkBe3ISTbqpddQ6BN6dUOT7s99ZY6XFAgPaas\" \\\n\t-H \"SYSTEM_TYPE: POS\" \\\n\t\"https://integrate-vinbus.unit.vn/api/v1/vinbusservices/integration/GetBankBinInfor\""
+					},
+					"response": []
+				},
+				{
+					"name": "syncdatalog/insert",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=utf-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=utf-8"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOiIzMDQwIiwiY29tcGFueWlkIjoiIiwidXNlcm5hbWUiOiJ1c2Vyc2FsZW1hbjEiLCJvd25lcmlkIjoiMCIsInJvbGUiOlsiRk5fTVBST0RVQ1RDQVRFR09SWSNBUElfREVMRVRFQllJRCIsIkZOX01QUk9EVUNUQ0FURUdPUlkjQVBJX0dFVEFMTCIsIkZOX01QUk9EVUNUQ0FURUdPUlkjQVBJX0dFVEJZSUQiLCJGTl9NUFJPRFVDVENBVEVHT1JZI0FQSV9JTlNFUlQiLCJGTl9NUFJPRFVDVENBVEVHT1JZI0FQSV9TRUFSQ0giLCJGTl9NUFJPRFVDVENBVEVHT1JZI0FQSV9VUERBVEUiLCJGTl9QT1NfQUNDT1VOVCNBUElfR0VUSU5GTyIsIkZOX1BPU19CTEFDS0xJU1RDQVJEI0FQSV9HRVRBTEwiLCJGTl9QT1NfQkxBQ0tMSVNUQ0FSRCNBUElfR0VUQllJRCIsIkZOX1BPU19CVVNJTkVTU1NFVFRJTkcjQVBJX0dFVE9CSkVDVFRZUEUiLCJGTl9QT1NfQlVTSU5FU1NTRVRUSU5HI0FQSV9HRVRQT1NQQVNTQ09ERSIsIkZOX1BPU19CVVNJTkVTU1NFVFRJTkcjQVBJX0dFVFFSVElNRU9VVCIsIkZOX1BPU19ISVNVU0VETU9OVEhDQVJEI0FQSV9JTlNFUlQiLCJGTl9QT1NfS0VZX01BTkFHRU1FTlQjQVBJX0RFTEVURSIsIkZOX1BPU19LRVlfTUFOQUdFTUVOVCNBUElfR0VUQUxMIiwiRk5fUE9TX0tFWV9NQU5BR0VNRU5UI0FQSV9HRVRCWUlEIiwiRk5fUE9TX0tFWV9NQU5BR0VNRU5UI0FQSV9JTlNFUlQiLCJGTl9QT1NfS0VZX01BTkFHRU1FTlQjQVBJX1VQREFURSIsIkZOX1BPU19NQlVTU1RPUCNBUElfR0VUQUxMIiwiRk5fUE9TX01CVVNTVE9QI0FQSV9HRVRCWUlEIiwiRk5fUE9TX01PTlRIQ0FSRCNBUElfR0VUV0hJVEVMSVNUIiwiRk5fUE9TX01QT1NNQUNISU5FI0FQSV9ERUxFVEVCWUlEIiwiRk5fUE9TX01QT1NNQUNISU5FI0FQSV9HRVRBTEwiLCJGTl9QT1NfTVBPU01BQ0hJTkUjQVBJX0dFVEJZSUQiLCJGTl9QT1NfTVBPU01BQ0hJTkUjQVBJX0dFVEJZSU1FSSIsIkZOX1BPU19NUE9TTUFDSElORSNBUElfSU5TRVJUIiwiRk5fUE9TX01QT1NNQUNISU5FI0FQSV9TRUFSQ0giLCJGTl9QT1NfTVBPU01BQ0hJTkUjQVBJX1VQREFURSIsIkZOX1BPU19NUk9VVEUjQVBJX0dFVEFMTCIsIkZOX1BPU19NUk9VVEUjQVBJX0dFVEJZSUQiLCJGTl9QT1NfUE9TQVBQVkVSU0lPTiNBUElfRE9XTE9BRCIsIkZOX1BPU19QT1NBUFBWRVJTSU9OI0FQSV9MQVNURURWRVJTSU9OIiwiRk5fUE9TX1BPU1NFTExFUiNBUElfSU5TRVJUIiwiRk5fUE9TX1NISUZUU0NIRURVTEVSI0FQSV9HRVRCWURBVEUiLCJGTl9QT1NfU1VNTUFSWVNDSEVEVUxFI0FQSV9TWU5DT1VUU0hJRlQiLCJGTl9QT1NfU1lOQ0RBVEFMT0cjQVBJX0lOU0VSVCIsIkZOX1BPU19URU1NT05USENBUkQjQVBJX0dFVEJZQ09ORElUSU9OIiwiRk5fUE9TX1RFTU1PTlRIQ0FSRCNBUElfVVBEQVRFIiwiRk5fUE9TX1RJQ0tFVE9SREVSI0FQSV9HRVRCWUlEIiwiRk5fUE9TX1RJQ0tFVE9SREVSI0FQSV9HRVRCWVJPVVRFSUQiLCJGTl9QT1NfVElDS0VUT1JERVIjQVBJX1NZTkNPVVRTSElGVCIsIkZOX1BPU19USUNLRVRQUk9EVUNUI0FQSV9HRVRCWUlEIiwiRk5fUE9TX1RJQ0tFVFBST0RVQ1QjQVBJX0dFVEJZUk9VVEVJRCIsIkZOX1BPU19USUNLRVRUUkFOU0FDVElPTiNBUElfR0VUQUxMIiwiRk5fUE9TX1RJQ0tFVFRSQU5TQUNUSU9OI0FQSV9HRVRCWUlEIiwiRk5fVEVNTU9OVEhDQVJEI0FQSV9ERUxFVEVCWUlEIiwiRk5fVEVNTU9OVEhDQVJEI0FQSV9HRVRBTEwiLCJGTl9URU1NT05USENBUkQjQVBJX0dFVEJZQ09ORElUSU9OIiwiRk5fVEVNTU9OVEhDQVJEI0FQSV9HRVRCWUlEIiwiRk5fVEVNTU9OVEhDQVJEI0FQSV9JTlNFUlQiLCJGTl9URU1NT05USENBUkQjQVBJX1NFQVJDSCIsIkZOX1RFTU1PTlRIQ0FSRCNBUElfVVBEQVRFIiwiRk5fVFJBQ0tJTkdfR1BTI0FQSV9ERUxFVEUiLCJGTl9UUkFDS0lOR19HUFMjQVBJX0dFVEFMTCIsIkZOX1RSQUNLSU5HX0dQUyNBUElfR0VUQllJRCIsIkZOX1RSQUNLSU5HX0dQUyNBUElfSU5TRVJUIiwiRk5fVFJBQ0tJTkdfR1BTI0FQSV9VUERBVEUiXSwiZ3JvdXBjb2RlIjoiMTAwOCIsImV4cCI6MTc0MzYyNDEwNiwiaWF0IjoxNzQzNjA0OTA2fQ.FRDobmtkBe3ISTbqpddQ6BN6dUOT7s99ZY6XFAgPaas"
+							},
+							{
+								"key": "content-length",
+								"value": "169",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"sellerIdCard\": \"03675733\",\n    \"routeId\": 1085,\n    \"scheduleId\": \"A1_OCP01_027142\",\n    \"goBack\": \"1\",\n    \"syncDate\": \"2025-04-02T21:53:15\",\n    \"type\": \"START_SCHEDULER\",\n    \"shiftSchedulerId\": 24504\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domainDev}}/pos/v1/syncdatalog/insert",
+							"host": [
+								"{{domainDev}}"
+							],
+							"path": [
+								"pos",
+								"v1",
+								"syncdatalog",
+								"insert"
+							]
+						},
+						"description": "Generated from cURL: curl -i \\\n\t-X POST \\\n\t-H \"Accept: application/json; charset=utf-8\" \\\n\t-H \"Content-Type: application/json; charset=utf-8\" \\\n\t-H \"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOiIzMDQwIiwiY29tcGFueWlkIjoiIiwidXNlcm5hbWUiOiJ1c2Vyc2FsZW1hbjEiLCJvd25lcmlkIjoiMCIsInJvbGUiOlsiRk5fTVBST0RVQ1RDQVRFR09SWSNBUElfREVMRVRFQllJRCIsIkZOX01QUk9EVUNUQ0FURUdPUlkjQVBJX0dFVEFMTCIsIkZOX01QUk9EVUNUQ0FURUdPUlkjQVBJX0dFVEJZSUQiLCJGTl9NUFJPRFVDVENBVEVHT1JZI0FQSV9JTlNFUlQiLCJGTl9NUFJPRFVDVENBVEVHT1JZI0FQSV9TRUFSQ0giLCJGTl9NUFJPRFVDVENBVEVHT1JZI0FQSV9VUERBVEUiLCJGTl9QT1NfQUNDT1VOVCNBUElfR0VUSU5GTyIsIkZOX1BPU19CTEFDS0xJU1RDQVJEI0FQSV9HRVRBTEwiLCJGTl9QT1NfQkxBQ0tMSVNUQ0FSRCNBUElfR0VUQllJRCIsIkZOX1BPU19CVVNJTkVTU1NFVFRJTkcjQVBJX0dFVE9CSkVDVFRZUEUiLCJGTl9QT1NfQlVTSU5FU1NTRVRUSU5HI0FQSV9HRVRQT1NQQVNTQ09ERSIsIkZOX1BPU19CVVNJTkVTU1NFVFRJTkcjQVBJX0dFVFFSVElNRU9VVCIsIkZOX1BPU19ISVNVU0VETU9OVEhDQVJEI0FQSV9JTlNFUlQiLCJGTl9QT1NfS0VZX01BTkFHRU1FTlQjQVBJX0RFTEVURSIsIkZOX1BPU19LRVlfTUFOQUdFTUVOVCNBUElfR0VUQUxMIiwiRk5fUE9TX0tFWV9NQU5BR0VNRU5UI0FQSV9HRVRCWUlEIiwiRk5fUE9TX0tFWV9NQU5BR0VNRU5UI0FQSV9JTlNFUlQiLCJGTl9QT1NfS0VZX01BTkFHRU1FTlQjQVBJX1VQREFURSIsIkZOX1BPU19NQlVTU1RPUCNBUElfR0VUQUxMIiwiRk5fUE9TX01CVVNTVE9QI0FQSV9HRVRCWUlEIiwiRk5fUE9TX01PTlRIQ0FSRCNBUElfR0VUV0hJVEVMSVNUIiwiRk5fUE9TX01QT1NNQUNISU5FI0FQSV9ERUxFVEVCWUlEIiwiRk5fUE9TX01QT1NNQUNISU5FI0FQSV9HRVRBTEwiLCJGTl9QT1NfTVBPU01BQ0hJTkUjQVBJX0dFVEJZSUQiLCJGTl9QT1NfTVBPU01BQ0hJTkUjQVBJX0dFVEJZSU1FSSIsIkZOX1BPU19NUE9TTUFDSElORSNBUElfSU5TRVJUIiwiRk5fUE9TX01QT1NNQUNISU5FI0FQSV9TRUFSQ0giLCJGTl9QT1NfTVBPU01BQ0hJTkUjQVBJX1VQREFURSIsIkZOX1BPU19NUk9VVEUjQVBJX0dFVEFMTCIsIkZOX1BPU19NUk9VVEUjQVBJX0dFVEJZSUQiLCJGTl9QT1NfUE9TQVBQVkVSU0lPTiNBUElfRE9XTE9BRCIsIkZOX1BPU19QT1NBUFBWRVJTSU9OI0FQSV9MQVNURURWRVJTSU9OIiwiRk5fUE9TX1BPU1NFTExFUiNBUElfSU5TRVJUIiwiRk5fUE9TX1NISUZUU0NIRURVTEVSI0FQSV9HRVRCWURBVEUiLCJGTl9QT1NfU1VNTUFSWVNDSEVEVUxFI0FQSV9TWU5DT1VUU0hJRlQiLCJGTl9QT1NfU1lOQ0RBVEFMT0cjQVBJX0lOU0VSVCIsIkZOX1BPU19URU1NT05USENBUkQjQVBJX0dFVEJZQ09ORElUSU9OIiwiRk5fUE9TX1RFTU1PTlRIQ0FSRCNBUElfVVBEQVRFIiwiRk5fUE9TX1RJQ0tFVE9SREVSI0FQSV9HRVRCWUlEIiwiRk5fUE9TX1RJQ0tFVE9SREVSI0FQSV9HRVRCWVJPVVRFSUQiLCJGTl9QT1NfVElDS0VUT1JERVIjQVBJX1NZTkNPVVRTSElGVCIsIkZOX1BPU19USUNLRVRQUk9EVUNUI0FQSV9HRVRCWUlEIiwiRk5fUE9TX1RJQ0tFVFBST0RVQ1QjQVBJX0dFVEJZUk9VVEVJRCIsIkZOX1BPU19USUNLRVRUUkFOU0FDVElPTiNBUElfR0VUQUxMIiwiRk5fUE9TX1RJQ0tFVFRSQU5TQUNUSU9OI0FQSV9HRVRCWUlEIiwiRk5fVEVNTU9OVEhDQVJEI0FQSV9ERUxFVEVCWUlEIiwiRk5fVEVNTU9OVEhDQVJEI0FQSV9HRVRBTEwiLCJGTl9URU1NT05USENBUkQjQVBJX0dFVEJZQ09ORElUSU9OIiwiRk5fVEVNTU9OVEhDQVJEI0FQSV9HRVRCWUlEIiwiRk5fVEVNTU9OVEhDQVJEI0FQSV9JTlNFUlQiLCJGTl9URU1NT05USENBUkQjQVBJX1NFQVJDSCIsIkZOX1RFTU1PTlRIQ0FSRCNBUElfVVBEQVRFIiwiRk5fVFJBQ0tJTkdfR1BTI0FQSV9ERUxFVEUiLCJGTl9UUkFDS0lOR19HUFMjQVBJX0dFVEFMTCIsIkZOX1RSQUNLSU5HX0dQUyNBUElfR0VUQllJRCIsIkZOX1RSQUNLSU5HX0dQUyNBUElfSU5TRVJUIiwiRk5fVFJBQ0tJTkdfR1BTI0FQSV9VUERBVEUiXSwiZ3JvdXBjb2RlIjoiMTAwOCIsImV4cCI6MTc0MzYyNDEwNiwiaWF0IjoxNzQzNjA0OTA2fQ.FRDobmtkBe3ISTbqpddQ6BN6dUOT7s99ZY6XFAgPaas\" \\\n\t-H \"content-length: 169\" \\\n\t-d \"{\\\"sellerIdCard\\\":\\\"03675733\\\",\\\"routeId\\\":1085,\\\"scheduleId\\\":\\\"A1_OCP01_027142\\\",\\\"goBack\\\":\\\"1\\\",\\\"syncDate\\\":\\\"2025-04-02T21:53:15\\\",\\\"type\\\":\\\"START_SCHEDULER\\\",\\\"shiftSchedulerId\\\":24504}\" \\\n\t\"https://pos-uat.unit.vn/pos/v1/syncdatalog/insert\""
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "domainDev",
+			"value": "http://127.0.0.1:8080",
+			"type": "string"
+		},
+		{
+			"key": "accessToken",
+			"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2Vyc2FsZW1hbjEiLCJpYXQiOjE3NDMzNTI0ODUsImV4cCI6MTc0MzQzODg4NX0.xjRyBQI3GHbgtbRfUrZ6Mb-B-eIFUtpUJudMeBoEG6k",
+			"type": "string"
+		}
+	]
+}
