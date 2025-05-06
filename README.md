@@ -3,8 +3,9 @@
 This project support server api and database for project POS app [bus-pos-app-provider](https://github.com/huyhuynh1905/bus-pos-app-provider).
 
 ## Resources:
-- [database - PostgreSQL]().
-- [Postman - jsonCollection]().
+- [database - PostgreSQL](https://github.com/huyhuynh1905/bus-server/blob/develop/support_data/database.sql).
+- [Postman - jsonCollection](https://github.com/huyhuynh1905/bus-server/blob/develop/support_data/POS-BUS.postman_collection.json).
+- [GPX - RouteFile](https://github.com/huyhuynh1905/bus-server/blob/develop/support_data/OCP1Test.gpx).
 
 
 ## 📂 Project Structure
